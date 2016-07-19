@@ -1,0 +1,47 @@
+*******************************************************
+	Easy Crafting - based on ideas of Easy Trader
+	Created by [CiC]red_ned  
+	17 years of CiC http://cic-gaming.co.uk
+*******************************************************
+	Easy Trader script 				http://www.exilemod.com/topic/8586-updated-easy-trader-set-up/
+	DMS 31 Bandit Missions 			http://www.exilemod.com/topic/12072-update31-dms-bandit-missions-either-new-or-reworked/
+	Altis Static Mission			http://www.exilemod.com/topic/10114-updated-altis-ai-island-dms-static-mission/?page=1
+	Altis Static Mission			http://www.exilemod.com/topic/10880-release-bomos-dms-static-mission/
+	Altis Static Mission			http://www.exilemod.com/topic/10877-release-kastro-castle-dms-static-mission/
+	Altis Static Mission			http://www.exilemod.com/topic/10919-release-castle-183-dms-static-mission/
+	Altis Static Mission			http://www.exilemod.com/topic/11133-release-kill-the-mayor-dms-static-mission/
+	Altis Static Mission			http://www.exilemod.com/topic/11294-release-kore-factory-dms-static-mission/
+	Altis Static Mission			http://www.exilemod.com/topic/11293-release-storage-invasion-dms-static-mission/
+	Altis Static Mission			http://www.exilemod.com/topic/11665-release-altis-chelonisi-power-dms-static-mission/						
+	Bornholm Static Mission			http://www.exilemod.com/topic/11245-release-operation-foothold-dms-static-mission-bornhom/		
+******************************************************
+	Updated for 1.0.0
+	Added "Exile" to start of Exile objects dropdown as some overlap with EBM.
+	Remove "Craft " from Exile crafting list as its easier to find items which dont all begin with C.
+	Added "EBM" to start of EBM objects dropdown.
+******************************************************
+	Updated for 0.9.8
+	Removed duplicate extended or custom craftings which now appear in Exile by default
+	Tidied up some classes so the extended crafting doesnt appear with Exile classes where snap building would be affected
+******************************************************
+Designed to be easier to update rather than having large config file - much easier for Exile updates, a collection of some of mine and a lot of other peoples posting of recipes on the Exilemod forums.
+
+All 3 crafting files include dropdown classes for BRAma Cookbook
+ExileCrafting is standard Exile crafting
+CustomCrafting is extended crafting using only Arma or Exile items so you dont need any more mods
+ExtendedBuilding is for the Extended Base mod: http://www.exilemod.com/topic/12705-extended-base-mod/
+
+1. Copy folders into your mission PBO (if you change the file structure then change the paths below) if you use Brama Recipes, otherwise copy in the addons folder from inside the No Brama folder.
+2. Open your mission config.cpp
+3. Find CfgCraftingRecipes and replace the whole expression, from class CfgCraftingRecipes down to the final ); with the lines you want from below depending on what you want.
+
+class CfgCraftingRecipes
+{
+	#include "addons\crafting\ExtendedBuilding.hpp"
+	#include "addons\crafting\CustomCrafting.hpp"
+	#include "addons\crafting\ExileCrafting.hpp"
+};
+and save
+4. Repack into your mission PBO.
+
+Its easy to make your own files, you could make files for each mod or do them by category like building, guns, ammo etc, it is just a different way to keep your config tidy as you grow your crafting recipes.
