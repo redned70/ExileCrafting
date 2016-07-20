@@ -1,4 +1,30 @@
-/* not added to my server uncomment to use
+class ATM: Exile_AbstractCraftingRecipe
+{
+	name = "ATM";
+	pictureItem = "Land_Atm_02_F_Kit";
+	returnedItems[] = 
+	{
+		{1, "Land_Atm_02_F_Kit"}
+	};
+	requiresFire = 1;
+	components[] = 
+	{
+		{1, "Exile_Item_PortableGeneratorKit"},
+		{3, "Exile_Item_MetalBoard"},
+		{2, "Exile_Item_MetalScrews"},
+		{4, "Exile_Item_MetalWire"},
+		{4, "Exile_Item_Rope"},
+		{2, "Exile_Item_DuctTape"},
+	};
+	tools[] =
+	{
+		"Exile_Item_Grinder",
+		"Exile_Item_Pliers",
+		"Exile_Item_Screwdriver"
+	};
+	category = "Misc";
+};
+/* not used on my server
 class ConcreteMixer: Exile_AbstractCraftingRecipe
 {
 	name = "Concrete Mixer";
@@ -22,7 +48,7 @@ class ConcreteMixer: Exile_AbstractCraftingRecipe
 		"Exile_Item_Pliers",
 		"Exile_Item_Screwdriver"
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };
 */
 class FlagCSAT: Exile_AbstractCraftingRecipe
@@ -43,7 +69,7 @@ class FlagCSAT: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Grinder"
 	};
-	category = "EBM Signs";
+	category = "Signs";
 };
 
 class GarbageContainer: Exile_AbstractCraftingRecipe
@@ -66,7 +92,7 @@ class GarbageContainer: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver",
 		"Exile_Item_Grinder"
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class MetalRack4Layers: Exile_AbstractCraftingRecipe
@@ -89,7 +115,7 @@ class MetalRack4Layers: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver",
 		"Exile_Item_Grinder"
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class WaterSink: Exile_AbstractCraftingRecipe
@@ -112,7 +138,7 @@ class WaterSink: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver",
 		"Exile_Item_Grinder"
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class PavementWideCorner: Exile_AbstractCraftingRecipe
@@ -137,7 +163,7 @@ class PavementWideCorner: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel"
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class PavementWide: Exile_AbstractCraftingRecipe
@@ -162,7 +188,7 @@ class PavementWide: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel"
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class PavementNarrowCorner: Exile_AbstractCraftingRecipe
@@ -188,7 +214,7 @@ class PavementNarrowCorner: Exile_AbstractCraftingRecipe
 	};
 	requiresConcreteMixer = 1;
 	
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class PavementNarrow: Exile_AbstractCraftingRecipe
@@ -213,7 +239,7 @@ class PavementNarrow: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel"
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class AltisMap: Exile_AbstractCraftingRecipe
@@ -234,7 +260,7 @@ class AltisMap: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Handsaw"
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class CampingTable: Exile_AbstractCraftingRecipe
@@ -256,7 +282,7 @@ class CampingTable: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Screwdriver"
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class CampingLight: Exile_AbstractCraftingRecipe
@@ -279,7 +305,7 @@ class CampingLight: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver",
 		"Exile_Item_Pliers"
 	};
-	category = "EBM Lamps";
+	category = "Lamps";
 };
 
 class CampingChairV2: Exile_AbstractCraftingRecipe
@@ -301,7 +327,7 @@ class CampingChairV2: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver"
 	};
 	
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class CampingChairV1: Exile_AbstractCraftingRecipe
@@ -322,7 +348,7 @@ class CampingChairV1: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Screwdriver"
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class SmallStone2: Exile_AbstractCraftingRecipe
@@ -344,7 +370,7 @@ class SmallStone2: Exile_AbstractCraftingRecipe
 	};
 	requiresConcreteMixer = 1;
 	
-	category = "EBM Flora";
+	category = "Flora";
 };
 
 class SolarPanel2: Exile_AbstractCraftingRecipe
@@ -366,7 +392,7 @@ class SolarPanel2: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Screwdriver"
 	};	
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class SolarPanel: Exile_AbstractCraftingRecipe
@@ -388,7 +414,7 @@ class SolarPanel: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Screwdriver"
 	};	
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class SleepingBag: Exile_AbstractCraftingRecipe
@@ -408,7 +434,7 @@ class SleepingBag: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Pliers"
 	};	
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class SharpStone2: Exile_AbstractCraftingRecipe
@@ -433,7 +459,7 @@ class SharpStone2: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel"
 	};	
 	requiresConcreteMixer = 1;
-	category = "EBM Flora";
+	category = "Flora";
 };
 
 class SharpStone1: Exile_AbstractCraftingRecipe
@@ -458,7 +484,7 @@ class SharpStone1: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel"
 	};	
 	requiresConcreteMixer = 1;
-	category = "EBM Flora";
+	category = "Flora";
 };
 
 class Pier1: Exile_AbstractCraftingRecipe
@@ -487,7 +513,7 @@ class Pier1: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel"
 	};	
 	requiresConcreteMixer = 1;
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class Bush: Exile_AbstractCraftingRecipe
@@ -508,7 +534,7 @@ class Bush: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Pliers"
 	};	
-	category = "EBM Flora";
+	category = "Flora";
 };
 
 class TransmissionTower: Exile_AbstractCraftingRecipe
@@ -531,7 +557,7 @@ class TransmissionTower: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Foolbox"
 	};	
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class SignUnexplodedAmmo: Exile_AbstractCraftingRecipe
@@ -554,7 +580,7 @@ class SignUnexplodedAmmo: Exile_AbstractCraftingRecipe
 		"Exile_Item_Foolbox",
 		"Exile_Item_Screwdriver"
 	};	
-	category = "EBM Signs";
+	category = "Signs";
 };
 
 class CastleTower: Exile_AbstractCraftingRecipe
@@ -581,7 +607,7 @@ class CastleTower: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel"
 	};	
 	requiresConcreteMixer = 1;
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class BeachBooth: Exile_AbstractCraftingRecipe
@@ -604,7 +630,7 @@ class BeachBooth: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Screwdriver"
 	};	
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class Barracks: Exile_AbstractCraftingRecipe
@@ -632,7 +658,7 @@ class Barracks: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel"
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class AirportTower: Exile_AbstractCraftingRecipe
@@ -660,7 +686,7 @@ class AirportTower: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel"
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class Shabbylamp: Exile_AbstractCraftingRecipe
@@ -686,7 +712,7 @@ class Shabbylamp: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver",
 		"Exile_Item_Handsaw"
 	};
-	category = "EBM Lamps";
+	category = "Lamps";
 };
 
 class Sunshade: Exile_AbstractCraftingRecipe
@@ -709,7 +735,7 @@ class Sunshade: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Screwdriver"
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class Sunchair: Exile_AbstractCraftingRecipe
@@ -732,7 +758,7 @@ class Sunchair: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Screwdriver"
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class SolarTower: Exile_AbstractCraftingRecipe
@@ -762,7 +788,7 @@ class SolarTower: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 		"Exile_Item_Grinder"
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class MetalShed: Exile_AbstractCraftingRecipe
@@ -787,7 +813,7 @@ class MetalShed: Exile_AbstractCraftingRecipe
 		"Exile_Item_Pliers",
 		"Exile_Item_Screwdriver"
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class AirplaneHangar: Exile_AbstractCraftingRecipe
@@ -814,7 +840,7 @@ class AirplaneHangar: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver",
 		"Exile_Item_Grinder"
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class BigDome: Exile_AbstractCraftingRecipe
@@ -841,7 +867,7 @@ class BigDome: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver",
 		"Exile_Item_Grinder"
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class StreetLamp: Exile_AbstractCraftingRecipe
@@ -867,7 +893,7 @@ class StreetLamp: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver",
 		"Exile_Item_Grinder"
 	};
-	category = "EBM Lamps";
+	category = "Lamps";
 };
 
 class TavernMiddle: Exile_AbstractCraftingRecipe
@@ -890,7 +916,7 @@ class TavernMiddle: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Screwdriver",
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class Tavern: Exile_AbstractCraftingRecipe
@@ -914,7 +940,7 @@ class Tavern: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver",
 	};
 	
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class SeaWall: Exile_AbstractCraftingRecipe
@@ -941,7 +967,7 @@ class SeaWall: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Flora";
+	category = "Flora";
 };
 
 class Industryfence3pts: Exile_AbstractCraftingRecipe
@@ -967,7 +993,7 @@ class Industryfence3pts: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class Industryfence: Exile_AbstractCraftingRecipe
@@ -993,7 +1019,7 @@ class Industryfence: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Walls";
+	category = "Walls";
 };	
 
 class CargoContainerSmall: Exile_AbstractCraftingRecipe
@@ -1017,7 +1043,7 @@ class CargoContainerSmall: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Screwdriver"
 	};
-	category = "EBM Container";
+	category = "Container";
 };	
 
 class BlockConcrete: Exile_AbstractCraftingRecipe
@@ -1043,7 +1069,7 @@ class BlockConcrete: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Misc";
+	category = "Misc";
 };	
 
 class Chair: Exile_AbstractCraftingRecipe
@@ -1065,7 +1091,7 @@ class Chair: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Screwdriver",
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };	
 
 class Pierbox: Exile_AbstractCraftingRecipe
@@ -1093,7 +1119,7 @@ class Pierbox: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Buildings";
+	category = "Buildings";
 };	
 
 class Toiletbox: Exile_AbstractCraftingRecipe
@@ -1116,7 +1142,7 @@ class Toiletbox: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Screwdriver",
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };	
 		
 class Table: Exile_AbstractCraftingRecipe
@@ -1139,7 +1165,7 @@ class Table: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Screwdriver",
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };			
 
 class Slumplane: Exile_AbstractCraftingRecipe
@@ -1161,7 +1187,7 @@ class Slumplane: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Screwdriver",
 	};	
-	category = "EBM Buildings";
+	category = "Buildings";
 };		
 
 class Radarsmall: Exile_AbstractCraftingRecipe
@@ -1186,7 +1212,7 @@ class Radarsmall: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Screwdriver"
 	};	
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 		
 class Floodlightdouble: Exile_AbstractCraftingRecipe
@@ -1212,7 +1238,7 @@ class Floodlightdouble: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Screwdriver"
 	};	
-	category = "EBM Lamps";
+	category = "Lamps";
 };
 
 class CncWallSmall8m: Exile_AbstractCraftingRecipe
@@ -1239,7 +1265,7 @@ class CncWallSmall8m: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class CncWallSmall4m: Exile_AbstractCraftingRecipe
@@ -1266,7 +1292,7 @@ class CncWallSmall4m: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class MilitaryVehicle: Exile_AbstractCraftingRecipe
@@ -1290,7 +1316,7 @@ class MilitaryVehicle: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver",
 		"Exile_Item_Grinder"
 	};
-	category = "EBM Signs";
+	category = "Signs";
 };
 
 class MilSignSmall: Exile_AbstractCraftingRecipe
@@ -1314,7 +1340,7 @@ class MilSignSmall: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver",
 		"Exile_Item_Grinder"
 	};
-	category = "EBM Signs";
+	category = "Signs";
 };
 
 class Watersource: Exile_AbstractCraftingRecipe
@@ -1342,7 +1368,7 @@ class Watersource: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class TouristShelter: Exile_AbstractCraftingRecipe
@@ -1372,7 +1398,7 @@ class TouristShelter: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class BigShed: Exile_AbstractCraftingRecipe
@@ -1395,7 +1421,7 @@ class BigShed: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Foolbox"
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class crashbarrier: Exile_AbstractCraftingRecipe
@@ -1416,7 +1442,7 @@ class crashbarrier: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Grinder",
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class cncbarriermedium: Exile_AbstractCraftingRecipe
@@ -1443,7 +1469,7 @@ class cncbarriermedium: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class cncbarrier1: Exile_AbstractCraftingRecipe
@@ -1470,7 +1496,7 @@ class cncbarrier1: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class Airportlamp: Exile_AbstractCraftingRecipe
@@ -1497,7 +1523,7 @@ class Airportlamp: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Pliers",
 	};
-	category = "EBM Lamps";
+	category = "Lamps";
 };
 
 class LampHalogen: Exile_AbstractCraftingRecipe
@@ -1524,7 +1550,7 @@ class LampHalogen: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Pliers",
 	};
-	category = "EBM Lamps";
+	category = "Lamps";
 };
 
 class TentHangar: Exile_AbstractCraftingRecipe
@@ -1551,7 +1577,7 @@ class TentHangar: Exile_AbstractCraftingRecipe
 		"Exile_Item_Handsaw",
 		"Exile_Item_Screwdriver"
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class TentDome: Exile_AbstractCraftingRecipe
@@ -1570,7 +1596,7 @@ class TentDome: Exile_AbstractCraftingRecipe
 		{1, "Exile_Item_DuctTape"},
 	};
 	
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class Platform: Exile_AbstractCraftingRecipe
@@ -1597,7 +1623,7 @@ class Platform: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class Garage: Exile_AbstractCraftingRecipe
@@ -1627,7 +1653,7 @@ class Garage: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver"
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class CNCStairs: Exile_AbstractCraftingRecipe
@@ -1654,7 +1680,7 @@ class CNCStairs: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class CargoContainerSandSmall: Exile_AbstractCraftingRecipe
@@ -1678,7 +1704,7 @@ class CargoContainerSandSmall: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver",
 		"Exile_Item_Grinder",
 	};
-	category = "EBM Container";
+	category = "Container";
 };
 
 class Brokenshed: Exile_AbstractCraftingRecipe
@@ -1701,7 +1727,7 @@ class Brokenshed: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Screwdriver",
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class Razorwire: Exile_AbstractCraftingRecipe
@@ -1724,7 +1750,7 @@ class Razorwire: Exile_AbstractCraftingRecipe
 		"Exile_Item_Pliers",
 		"Exile_Item_Grinder"
 	};
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class SmallShed: Exile_AbstractCraftingRecipe
@@ -1747,7 +1773,7 @@ class SmallShed: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Screwdriver",
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class FuelstationShed: Exile_AbstractCraftingRecipe
@@ -1772,7 +1798,7 @@ class FuelstationShed: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver",
 		"Exile_Item_Grinder"
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class CNCWallType2: Exile_AbstractCraftingRecipe
@@ -1799,7 +1825,7 @@ class CNCWallType2: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class CNCWall: Exile_AbstractCraftingRecipe
@@ -1826,7 +1852,7 @@ class CNCWall: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 
@@ -1854,7 +1880,7 @@ class CNCShelter: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 
@@ -1879,7 +1905,7 @@ class SlumContainer: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Screwdriver"
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class HugeContainer: Exile_AbstractCraftingRecipe
@@ -1903,7 +1929,7 @@ class HugeContainer: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Screwdriver"
 	};
-	category = "EBM Container";
+	category = "Container";
 };
 
 class CargoHouse: Exile_AbstractCraftingRecipe
@@ -1927,7 +1953,7 @@ class CargoHouse: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Screwdriver"
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class ShootingPos: Exile_AbstractCraftingRecipe
@@ -1944,7 +1970,7 @@ class ShootingPos: Exile_AbstractCraftingRecipe
 		{4, "Exile_Item_Woodlog"},
 	};
 	
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class BagBunkerBig: Exile_AbstractCraftingRecipe
@@ -1967,7 +1993,7 @@ class BagBunkerBig: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Pliers",
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class Pumpstation: Exile_AbstractCraftingRecipe
@@ -1992,7 +2018,7 @@ class Pumpstation: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Screwdriver",
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class CargoTowerBig: Exile_AbstractCraftingRecipe
@@ -2016,7 +2042,7 @@ class CargoTowerBig: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Screwdriver",
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class MetalShelf: Exile_AbstractCraftingRecipe
@@ -2040,7 +2066,7 @@ class MetalShelf: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Screwdriver",
 	};
-	category = "EBM Container";
+	category = "Container";
 };
 
 class RustyTank: Exile_AbstractCraftingRecipe
@@ -2062,7 +2088,7 @@ class RustyTank: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Grinder",
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class Steelfence: Exile_AbstractCraftingRecipe
@@ -2083,7 +2109,7 @@ class Steelfence: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Grinder",
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class Pier: Exile_AbstractCraftingRecipe
@@ -2105,7 +2131,7 @@ class Pier: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Screwdriver",
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class LandCargoPatrol: Exile_AbstractCraftingRecipe
@@ -2130,7 +2156,7 @@ class LandCargoPatrol: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Screwdriver",
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class CncWallMil4M: Exile_AbstractCraftingRecipe
@@ -2157,7 +2183,7 @@ class CncWallMil4M: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class MilitaryArea: Exile_AbstractCraftingRecipe
@@ -2181,7 +2207,7 @@ class MilitaryArea: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver",
 		"Exile_Item_Grinder",
 	};
-	category = "EBM Signs";
+	category = "Signs";
 };
 
 
@@ -2207,7 +2233,7 @@ class Icebox: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver",
 		"Exile_Item_Pliers",
 	};
-	category = "EBM Container";
+	category = "Container";
 };
 
 class Bargate: Exile_AbstractCraftingRecipe
@@ -2231,7 +2257,7 @@ class Bargate: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver",
 		"Exile_Item_Grinder",
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class Citygate: Exile_AbstractCraftingRecipe
@@ -2260,7 +2286,7 @@ class Citygate: Exile_AbstractCraftingRecipe
 		"Exile_Item_Screwdriver",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class Rack: Exile_AbstractCraftingRecipe
@@ -2283,7 +2309,7 @@ class Rack: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Screwdriver",
 	};
-	category = "EBM Container";
+	category = "Container";
 };
 
 
@@ -2308,7 +2334,7 @@ class HeliPad: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot",
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class ConcreteWall8m: Exile_AbstractCraftingRecipe
@@ -2335,7 +2361,7 @@ class ConcreteWall8m: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class ConcreteWall4m: Exile_AbstractCraftingRecipe
@@ -2362,7 +2388,7 @@ class ConcreteWall4m: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class ConcreteWall1: Exile_AbstractCraftingRecipe
@@ -2389,7 +2415,7 @@ class ConcreteWall1: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class ConcreteRamp: Exile_AbstractCraftingRecipe
@@ -2416,7 +2442,7 @@ class ConcreteRamp: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class SandbagBarrierBigCorner: Exile_AbstractCraftingRecipe
@@ -2438,7 +2464,7 @@ class SandbagBarrierBigCorner: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Pliers",
 	};
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class BunkerHuge: Exile_AbstractCraftingRecipe
@@ -2466,7 +2492,7 @@ class BunkerHuge: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Container";
+	category = "Container";
 };
 
 
@@ -2495,7 +2521,7 @@ class BagBunkerSmall: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class MetalWoodenRack: Exile_AbstractCraftingRecipe
@@ -2520,7 +2546,7 @@ class MetalWoodenRack: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Screwdriver"
 	};
-	category = "EBM Container";
+	category = "Container";
 };
 
 class SandbagTower: Exile_AbstractCraftingRecipe
@@ -2544,7 +2570,7 @@ class SandbagTower: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Pliers",
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class SandbagsLong: Exile_AbstractCraftingRecipe
@@ -2565,7 +2591,7 @@ class SandbagsLong: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Shovel",
 	};
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class SandbagCorner: Exile_AbstractCraftingRecipe
@@ -2586,7 +2612,7 @@ class SandbagCorner: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Shovel",
 	};
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class LandContainer: Exile_AbstractCraftingRecipe
@@ -2608,7 +2634,7 @@ class LandContainer: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Screwdriver",
 	};
-	category = "EBM Container";
+	category = "Container";
 };
 
 class Ammobox: Exile_AbstractCraftingRecipe
@@ -2632,7 +2658,7 @@ class Ammobox: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Foolbox",
 	};
-	category = "EBM Container";
+	category = "Container";
 };
 
 class Watercooler: Exile_AbstractCraftingRecipe
@@ -2656,7 +2682,7 @@ class Watercooler: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Screwdriver",
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class CncBarrier: Exile_AbstractCraftingRecipe
@@ -2683,7 +2709,7 @@ class CncBarrier: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class Stonewall: Exile_AbstractCraftingRecipe
@@ -2706,7 +2732,7 @@ class Stonewall: Exile_AbstractCraftingRecipe
 		"Exile_Item_Shovel",
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class Stonegate: Exile_AbstractCraftingRecipe
@@ -2732,7 +2758,7 @@ class Stonegate: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder"
 	};
 	requiresConcreteMixer = 1;
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class PierLadder: Exile_AbstractCraftingRecipe
@@ -2754,7 +2780,7 @@ class PierLadder: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Grinder"
 	};
-	category = "EBM Misc";
+	category = "Misc";
 };
 
 class CamoNetOPFORopen: Exile_AbstractCraftingRecipe
@@ -2778,7 +2804,7 @@ class CamoNetOPFORopen: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Pliers"
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class CamoNetINDPopen: Exile_AbstractCraftingRecipe
@@ -2802,7 +2828,7 @@ class CamoNetINDPopen: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Pliers"
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 class CamoNetBLUFORopen: Exile_AbstractCraftingRecipe
@@ -2826,7 +2852,7 @@ class CamoNetBLUFORopen: Exile_AbstractCraftingRecipe
 		"Exile_Item_Grinder",
 		"Exile_Item_Pliers"
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
 
 
@@ -2850,7 +2876,7 @@ class Barrier1: Exile_AbstractCraftingRecipe  //thank you MrDynamite for sharing
 	{
 		"Exile_Item_Pliers"
 	};
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class Barrier3: Exile_AbstractCraftingRecipe
@@ -2873,9 +2899,9 @@ class Barrier3: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Pliers"
 	};
-	category = "EBM Walls";
+	category = "Walls";
 };
-/* in Exile - Exile_Item_HBarrier5Kit
+
 class Barrier5: Exile_AbstractCraftingRecipe
 {
     name = "Barrier5";
@@ -2896,9 +2922,9 @@ class Barrier5: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Pliers"
 	};
-	category = "EBM Walls";
+	category = "Walls";
 };
-*/
+
 class SandbagBarrierBig4m: Exile_AbstractCraftingRecipe
 {
     name = "Sandbag Barrier Big 4m";
@@ -2919,7 +2945,7 @@ class SandbagBarrierBig4m: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Pliers"
 	};
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 class SandbagBarrierBig6m: Exile_AbstractCraftingRecipe
@@ -2942,7 +2968,7 @@ class SandbagBarrierBig6m: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Pliers"
 	};
-	category = "EBM Walls";
+	category = "Walls";
 };
 
 
@@ -2968,5 +2994,5 @@ class BagBunker: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Pliers"
 	};
-	category = "EBM Buildings";
+	category = "Buildings";
 };
