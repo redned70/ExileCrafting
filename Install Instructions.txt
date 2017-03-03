@@ -15,9 +15,8 @@
 	Altis Static Mission			http://www.exilemod.com/topic/11665-release-altis-chelonisi-power-dms-static-mission/						
 	Bornholm Static Mission			http://www.exilemod.com/topic/11245-release-operation-foothold-dms-static-mission-bornhom/		
 ******************************************************
-	Updated for 1.0.0
+	Updated for 1.0.2
 	Added "Exile" to start of Exile objects dropdown as some overlap with EBM.
-	Remove "Craft " from Exile crafting list as its easier to find items which dont all begin with C.
 	Added "EBM" to start of EBM objects dropdown.
 ******************************************************
 	Updated for 0.9.8

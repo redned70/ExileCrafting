@@ -5,8 +5,7 @@ Easy Exile Crating
 	Created by [CiC]red_ned  
 	17 years of CiC http://cic-gaming.co.uk
 
-	v1.4 EBM mod separated.
+	v0.2.9 EBM mod separated.
 
-	Updated for 1.0.0
+	Updated for 1.0.2
 	Added "Exile" to start of Exile objects dropdown as some overlap with EBM.
-	Remove "Craft " from Exile crafting list as its easier to find items which dont all begin with C.

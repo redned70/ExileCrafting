@@ -3,7 +3,376 @@ But be careful! People who don't have the APEX DLC can not see the Buildings! Th
 
 //#define USE_APEX_Buildings 1
 
-#ifdef USE_APEX_Buildings
+/*#ifdef USE_APEX_Buildings  //Don't remove this - Apex Buildings are fucked up :/
+
+class BarrierbunkergreenBig: Exile_AbstractCraftingRecipe//V0.2.8
+{
+	name = "Barrierbunker Green Big APEX";
+	pictureItem = "Land_HBarrier_01_big_tower_green_F_Kit";
+	returnedItems[] = 
+	{
+		{1,"Land_HBarrier_01_big_tower_green_F_Kit"}
+	};
+	requiresFire = 0;
+	components[] = 
+	{
+		{3, "Exile_Item_Sand"},
+		{5, "Exile_Item_WoodPlank"},
+		{2, "Exile_Item_Woodlog"}
+	};
+	tools[] =
+	{
+		"Exile_Item_Shovel",
+		"Exile_Item_Pliers"
+	};
+	requiresConcreteMixer = 1;
+	category = "Walls";
+};
+
+class BagbunkergreenBig: Exile_AbstractCraftingRecipe//V0.2.8
+{
+	name = "Bagbunker Green Big APEX";
+	pictureItem = "Land_Bagbunker_01_large_green_F_Kit";
+	returnedItems[] = 
+	{
+		{1,"Land_Bagbunker_01_large_green_F_Kit"}
+	};
+	requiresFire = 0;
+	components[] = 
+	{
+		{3, "Exile_Item_Sand"},
+		{5, "Exile_Item_WoodPlank"},
+		{2, "Exile_Item_Rope"}
+	};
+	tools[] =
+	{
+		"Exile_Item_Shovel",
+		"Exile_Item_Pliers"
+	};
+	requiresConcreteMixer = 1;
+	category = "Walls";
+};
+
+
+class SandbagshortGreen: Exile_AbstractCraftingRecipe//V0.2.8
+{
+	name = "Sandbagshort Green APEX";
+	pictureItem = "Land_Bagfence_01_short_green_F_Kit";
+	returnedItems[] = 
+	{
+		{1,"Land_Bagfence_01_short_green_F_Kit"}
+	};
+	requiresFire = 0;
+	components[] = 
+	{
+		{1, "Exile_Item_Sand"}
+	};
+	tools[] =
+	{
+		"Exile_Item_Shovel"
+	};
+	requiresConcreteMixer = 1;
+	category = "Walls";
+};
+
+class SandbaglongGreen: Exile_AbstractCraftingRecipe//V0.2.8
+{
+	name = "Sandbaglong Green APEX";
+	pictureItem = "Land_Bagfence_01_long_green_F_Kit";
+	returnedItems[] = 
+	{
+		{1,"Land_Bagfence_01_long_green_F_Kit"}
+	};
+	requiresFire = 0;
+	components[] = 
+	{
+		{2, "Exile_Item_Sand"}
+	};
+	tools[] =
+	{
+		"Exile_Item_Shovel"
+	};
+	requiresConcreteMixer = 1;
+	category = "Walls";
+};
+
+class Petroglyphwall02: Exile_AbstractCraftingRecipe//V0.2.8
+{
+	name = "Petroglyphwall02 APEX";
+	pictureItem = "Land_PetroglyphWall_02_F_Kit";
+	returnedItems[] = 
+	{
+		{1,"Land_PetroglyphWall_02_F_Kit"},
+		{1,"Exile_Item_WaterCanisterEmpty"},
+		{1,"Exile_Item_FuelCanisterEmpty"}
+	};
+	requiresFire = 0;
+	components[] = 
+	{
+		{2, "Exile_Item_Cement"},
+		{2, "Exile_Item_Sand"},
+		{1, "Exile_Item_WaterCanisterDirtyWater"},
+		{1, "Exile_Item_FuelCanisterFull"}
+	};
+	tools[] =
+	{
+		"Exile_Item_Shovel"
+	};
+	requiresConcreteMixer = 1;
+	category = "Walls";
+};
+
+class Petroglyphwall01: Exile_AbstractCraftingRecipe//V0.2.8
+{
+	name = "Petroglyphwall01 APEX";
+	pictureItem = "Land_PetroglyphWall_01_F_Kit";
+	returnedItems[] = 
+	{
+		{1,"Land_PetroglyphWall_01_F_Kit"},
+		{1,"Exile_Item_WaterCanisterEmpty"},
+		{1,"Exile_Item_FuelCanisterEmpty"}
+	};
+	requiresFire = 0;
+	components[] = 
+	{
+		{2, "Exile_Item_Cement"},
+		{2, "Exile_Item_Sand"},
+		{1, "Exile_Item_WaterCanisterDirtyWater"},
+		{1, "Exile_Item_FuelCanisterFull"}
+	};
+	tools[] =
+	{
+		"Exile_Item_Shovel"
+	};
+	requiresConcreteMixer = 1;
+	category = "Walls";
+};
+
+class IRtent02: Exile_AbstractCraftingRecipe//V0.2.8
+{
+	name = "IR Tent 02 APEX";
+	pictureItem = "Land_IRMaskingCover_02_F_Kit";
+	returnedItems[] = 
+	{
+		{1,"Land_IRMaskingCover_02_F_Kit"}
+	};
+	requiresFire = 0;
+	components[] = 
+	{
+		{3, "Exile_Item_JunkMetal"},
+		{3, "Exile_Item_Rope"}
+	};
+	tools[] =
+	{
+		"Exile_Item_Pliers"
+	};
+	requiresConcreteMixer = 1;
+	category = "Walls";
+};
+
+
+class IRtent01: Exile_AbstractCraftingRecipe//V0.2.8
+{
+	name = "IR Tent 01 APEX";
+	pictureItem = "Land_IRMaskingCover_01_F_Kit";
+	returnedItems[] = 
+	{
+		{1,"Land_IRMaskingCover_01_F_Kit"}
+	};
+	requiresFire = 0;
+	components[] = 
+	{
+		{3, "Exile_Item_JunkMetal"},
+		{3, "Exile_Item_Rope"}
+	};
+	tools[] =
+	{
+		"Exile_Item_Pliers"
+	};
+	requiresConcreteMixer = 1;
+	category = "Walls";
+};
+
+class Breakwater02: Exile_AbstractCraftingRecipe//V0.2.8
+{
+	name = "Breakwater02 APEX";
+	pictureItem = "Land_Breakwater_02_F_Kit";
+	returnedItems[] = 
+	{
+		{1,"Land_Breakwater_02_F_Kit"},
+		{2,"Exile_Item_WaterCanisterEmpty"},
+		{2,"Exile_Item_FuelCanisterEmpty"}
+	};
+	requiresFire = 0;
+	components[] = 
+	{
+		{3, "Exile_Item_Cement"},
+		{3, "Exile_Item_Sand"},
+		{2, "Exile_Item_WaterCanisterDirtyWater"},
+		{2, "Exile_Item_FuelCanisterFull"}
+	};
+	tools[] =
+	{
+		"Exile_Item_Shovel"
+	};
+	requiresConcreteMixer = 1;
+	category = "Walls";
+};
+
+class Breakwater01: Exile_AbstractCraftingRecipe//V0.2.8
+{
+	name = "Breakwater01 APEX";
+	pictureItem = "Land_Breakwater_01_F_Kit";
+	returnedItems[] = 
+	{
+		{1,"Land_Breakwater_01_F_Kit"},
+		{2,"Exile_Item_WaterCanisterEmpty"},
+		{2,"Exile_Item_FuelCanisterEmpty"}
+	};
+	requiresFire = 0;
+	components[] = 
+	{
+		{3, "Exile_Item_Cement"},
+		{3, "Exile_Item_Sand"},
+		{2, "Exile_Item_WaterCanisterDirtyWater"},
+		{2, "Exile_Item_FuelCanisterFull"}
+	};
+	tools[] =
+	{
+		"Exile_Item_Shovel"
+	};
+	requiresConcreteMixer = 1;
+	category = "Walls";
+};
+
+class BasaltwallGate: Exile_AbstractCraftingRecipe//V0.2.8
+{
+	name = "Basaltwall Gate APEX";
+	pictureItem = "Land_BasaltWall_01_gate_F_Kit";
+	returnedItems[] = 
+	{
+		{1,"Land_BasaltWall_01_gate_F_Kit"},
+		{1,"Exile_Item_WaterCanisterEmpty"},
+		{1,"Exile_Item_FuelCanisterEmpty"}
+	};
+	requiresFire = 0;
+	components[] = 
+	{
+		{2, "Exile_Item_Cement"},
+		{2, "Exile_Item_Sand"},
+		{1, "Exile_Item_WaterCanisterDirtyWater"},
+		{1, "Exile_Item_FuelCanisterFull"}
+	};
+	tools[] =
+	{
+		"Exile_Item_Shovel"
+	};
+	requiresConcreteMixer = 1;
+	category = "Walls";
+};
+
+class Basaltwall8m: Exile_AbstractCraftingRecipe//V0.2.8
+{
+	name = "Basaltwall 8m APEX";
+	pictureItem = "Land_BasaltWall_01_8m_F_Kit";
+	returnedItems[] = 
+	{
+		{1,"Land_BasaltWall_01_8m_F_Kit"},
+		{1,"Exile_Item_WaterCanisterEmpty"},
+		{1,"Exile_Item_FuelCanisterEmpty"}
+	};
+	requiresFire = 0;
+	components[] = 
+	{
+		{2, "Exile_Item_Cement"},
+		{2, "Exile_Item_Sand"},
+		{1, "Exile_Item_WaterCanisterDirtyWater"},
+		{1, "Exile_Item_FuelCanisterFull"}
+	};
+	tools[] =
+	{
+		"Exile_Item_Shovel"
+	};
+	requiresConcreteMixer = 1;
+	category = "Walls";
+};
+
+class Basaltwall4m: Exile_AbstractCraftingRecipe//V0.2.8
+{
+	name = "Basaltwall 4m APEX";
+	pictureItem = "Land_BasaltWall_01_4m_F_Kit";
+	returnedItems[] = 
+	{
+		{1,"Land_BasaltWall_01_4m_F_Kit"},
+		{1,"Exile_Item_WaterCanisterEmpty"},
+		{1,"Exile_Item_FuelCanisterEmpty"}
+	};
+	requiresFire = 0;
+	components[] = 
+	{
+		{2, "Exile_Item_Cement"},
+		{2, "Exile_Item_Sand"},
+		{1, "Exile_Item_WaterCanisterDirtyWater"},
+		{1, "Exile_Item_FuelCanisterFull"}
+	};
+	tools[] =
+	{
+		"Exile_Item_Shovel"
+	};
+	requiresConcreteMixer = 1;
+	category = "Walls";
+};
+
+class Airport01hangarAPEX: Exile_AbstractCraftingRecipe //V0.2.8
+{
+	name = "Airport Hangar APEX";
+	pictureItem = "Land_Airport_01_hangar_F_Kit";
+	returnedItems[] = 
+	{
+		{1,"Land_Airport_01_hangar_F_Kit"},
+	};
+	requiresFire = 1;
+	components[] = 
+	{
+		{3, "Exile_Item_MetalBoard"},
+		{2, "Exile_Item_MetalPole"},
+		{4, "Exile_Item_MetalScrews"},
+		{4, "Exile_Item_JunkMetal"}
+	};
+	tools[] =
+	{
+		"Exile_Item_Screwdriver",
+		"Exile_Item_Grinder",
+		"Exile_Item_Hammer"
+	};
+	category = "Buildings";
+};
+
+class GarageShelterAPEX: Exile_AbstractCraftingRecipe //V0.2.7
+{
+	name = "Garage Shelter APEX";
+	pictureItem = "Land_GarageShelter_01_F_Kit";
+	returnedItems[] = 
+	{
+		{1,"Land_GarageShelter_01_F_Kit"},
+	};
+	requiresFire = 1;
+	components[] = 
+	{
+		{10, "Exile_Item_WoodPlank"},
+		{4, "Exile_Item_Woodlog"},
+		{2, "Exile_Item_MetalScrews"},
+		{2, "Exile_Item_JunkMetal"}
+	};
+	tools[] =
+	{
+		"Exile_Item_Screwdriver",
+		"Exile_Item_Grinder",
+		"Exile_Item_Hammer"
+	};
+	category = "Buildings";
+};
+
 class BigBunkerAPEX: Exile_AbstractCraftingRecipe
 {
 	name = "Big Bunker APEX";
@@ -261,7 +630,220 @@ class TrenchGrassAPEX: Exile_AbstractCraftingRecipe
 	requiresConcreteMixer = 0;
 	category = "Buildings";
 };
-#endif
+#endif*/   //Don't remove this - Apex Buildings are fucked up :/
+
+class HuronAmmo: Exile_AbstractCraftingRecipe
+{
+	name = "HuronAmmo";
+	pictureItem = "B_Slingload_01_Ammo_F_Kit";
+	returnedItems[] = 
+	{
+		{1, "B_Slingload_01_Ammo_F_Kit"}
+	};
+	requiresFire = 1;
+	components[] = 
+	{
+		{3, "Exile_Item_MetalBoard"},
+		{2, "Exile_Item_JunkMetal"},
+		{5, "Exile_Item_MetalScrews"},
+		{2, "Exile_Item_StorageCrateKit"}
+	};
+	tools[] =
+	{
+		"Exile_Item_Screwdriver",
+		"Exile_Item_Grinder"
+	};
+	category = "Container";
+};
+
+class HuronFuel: Exile_AbstractCraftingRecipe
+{
+	name = "HuronFuel";
+	pictureItem = "B_Slingload_01_fuel_F_Kit";
+	returnedItems[] = 
+	{
+		{1, "B_Slingload_01_fuel_F_Kit"}
+	};
+	requiresFire = 1;
+	components[] = 
+	{
+		{3, "Exile_Item_MetalBoard"},
+		{5, "Exile_Item_MetalScrews"},
+		{5, "Exile_Item_FuelCanisterFull"},
+	};
+	tools[] =
+	{
+		"Exile_Item_Screwdriver",
+		"Exile_Item_Grinder"
+	};
+	category = "Container";
+};
+
+class Suitcase: Exile_AbstractCraftingRecipe
+{
+	name = "Suitcase";
+	pictureItem = "Land_Suitcase_F_Kit";
+	returnedItems[] = 
+	{
+		{1, "Land_Suitcase_F_Kit"}
+	};
+	requiresFire = 1;
+	components[] = 
+	{
+		{1, "Exile_Item_MetalBoard"},
+		{1, "Exile_Item_MetalScrews"},
+	};
+	tools[] =
+	{
+		"Exile_Item_Screwdriver"
+	};
+	category = "Container";
+};
+
+class AmmoBoxsmall: Exile_AbstractCraftingRecipe
+{
+	name = "Ammo Box";
+	pictureItem = "Land_Ammobox_rounds_F_Kit";
+	returnedItems[] = 
+	{
+		{1, "Land_Ammobox_rounds_F_Kit"}
+	};
+	requiresFire = 1;
+	components[] = 
+	{
+		{1, "Exile_Item_MetalBoard"},
+		{1, "Exile_Item_DuctTape"},
+	};
+	category = "Container";
+};
+
+
+class ResearchSmall: Exile_AbstractCraftingRecipe
+{
+	name = "Research Small";
+	pictureItem = "Land_Research_house_V1_F_Kit";
+	returnedItems[] = 
+	{
+		{1, "Land_Research_house_V1_F_Kit"}
+	};
+	requiresFire = 1;
+	components[] = 
+	{
+		{2, "Exile_Item_JunkMetal"},
+		{1, "Exile_Item_MetalScrews"},
+		{1, "Exile_Item_MetalBoard"},
+		{1, "Exile_Item_DuctTape"},
+	};
+	tools[] =
+	{
+		"Exile_Item_Grinder",
+		"Exile_Item_Pliers",
+		"Exile_Item_Screwdriver"
+	};
+	category = "Buildings";
+};
+
+class ResearchBig: Exile_AbstractCraftingRecipe
+{
+	name = "Research Big";
+	pictureItem = "Land_Research_HQ_F_Kit";
+	returnedItems[] = 
+	{
+		{1, "Land_Research_HQ_F_Kit"}
+	};
+	requiresFire = 1;
+	components[] = 
+	{
+		{4, "Exile_Item_JunkMetal"},
+		{2, "Exile_Item_MetalScrews"},
+		{2, "Exile_Item_MetalBoard"},
+		{2, "Exile_Item_DuctTape"},
+	};
+	tools[] =
+	{
+		"Exile_Item_Grinder",
+		"Exile_Item_Pliers",
+		"Exile_Item_Screwdriver"
+	};
+	category = "Buildings";
+};
+
+class PlasticCase: Exile_AbstractCraftingRecipe
+{
+	name = "Plastic Case";
+	pictureItem = "Land_PlasticCase_01_medium_F_Kit";
+	returnedItems[] = 
+	{
+		{1, "Land_PlasticCase_01_medium_F_Kit"}
+	};
+	requiresFire = 1;
+	components[] = 
+	{
+		{3, "Exile_Item_WoodPlank"},
+		{2, "Exile_Item_MetalScrews"},
+		{1, "Exile_Item_MetalBoard"},
+		{2, "Exile_Item_DuctTape"},
+	};
+	tools[] =
+	{
+		"Exile_Item_Grinder",
+		"Exile_Item_Pliers",
+		"Exile_Item_Screwdriver"
+	};
+	category = "Container";
+};
+
+class HouseBig: Exile_AbstractCraftingRecipe
+{
+	name = "House Big";
+	pictureItem = "Land_i_House_Big_01_V2_F_Kit";
+	returnedItems[] = 
+	{
+		{1, "Land_i_House_Big_01_V2_F_Kit"},
+		{2,"Exile_Item_WaterCanisterEmpty"},
+		{2,"Exile_Item_FuelCanisterEmpty"}
+	};
+	requiresFire = 0;
+	components[] = 
+	{
+		{3, "Exile_Item_Cement"},
+		{3, "Exile_Item_Sand"},
+		{2, "Exile_Item_WaterCanisterDirtyWater"},
+		{2, "Exile_Item_FuelCanisterFull"}
+	};
+	tools[] =
+	{
+		"Exile_Item_Shovel"
+	};
+	requiresConcreteMixer = 1;
+	category = "Buildings";
+};
+
+class Bungalow: Exile_AbstractCraftingRecipe
+{
+	name = "Bungalow";
+	pictureItem = "Land_i_House_Small_03_V1_F_Kit";
+	returnedItems[] = 
+	{
+		{1, "Land_i_House_Small_03_V1_F_Kit"},
+		{1,"Exile_Item_WaterCanisterEmpty"},
+		{1,"Exile_Item_FuelCanisterEmpty"}
+	};
+	requiresFire = 0;
+	components[] = 
+	{
+		{2, "Exile_Item_Cement"},
+		{2, "Exile_Item_Sand"},
+		{1, "Exile_Item_WaterCanisterDirtyWater"},
+		{1, "Exile_Item_FuelCanisterFull"}
+	};
+	tools[] =
+	{
+		"Exile_Item_Shovel"
+	};
+	requiresConcreteMixer = 1;
+	category = "Buildings";
+};
 
 class ATM: Exile_AbstractCraftingRecipe
 {
@@ -3134,7 +3716,7 @@ class Barrier1: Exile_AbstractCraftingRecipe  //thank you MrDynamite for sharing
     requiredInteractionModelGroup = "WorkBench";
     components[] =
     {
-        {2, "Exile_Item_Sand"}, // Change
+        {1, "Exile_Item_Sand"}, // Change
 		{1, "Exile_Item_MetalWire"},
     };
 	tools[] =
@@ -3156,8 +3738,7 @@ class Barrier3: Exile_AbstractCraftingRecipe
     requiredInteractionModelGroup = "WorkBench";
     components[] =
     {
-        {1, "Land_HBarrier_1_F_Kit"},
-		{1, "Exile_Item_Sand"}, // Change
+		{2, "Exile_Item_Sand"}, // Change
 		{1, "Exile_Item_MetalWire"},
     };
 	tools[] =
@@ -3179,8 +3760,7 @@ class Barrier5: Exile_AbstractCraftingRecipe
     requiredInteractionModelGroup = "WorkBench";
     components[] =
     {
-        {1, "Land_HBarrier_3_F_Kit"},
-		{1, "Exile_Item_Sand"}, // Change
+		{3, "Exile_Item_Sand"}, // Change
 		{1, "Exile_Item_MetalWire"},
     };
 	tools[] =
