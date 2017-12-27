@@ -3,7 +3,7 @@ Easy Exile Crating
 
 	Easy Crafting - based on ideas of Easy Trader
 	Created by [CiC]red_ned  
-	17 years of CiC http://cic-gaming.co.uk
+	18 years of CiC http://cic-gaming.co.uk 
 
 	v0.2.9 EBM mod separated.
 
