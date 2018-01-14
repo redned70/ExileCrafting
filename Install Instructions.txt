@@ -14,15 +14,15 @@
 	Altis Static Mission			http://www.exilemod.com/topic/11293-release-storage-invasion-dms-static-mission/
 	Altis Static Mission			http://www.exilemod.com/topic/11665-release-altis-chelonisi-power-dms-static-mission/						
 	Bornholm Static Mission			http://www.exilemod.com/topic/11245-release-operation-foothold-dms-static-mission-bornhom/		
-******************************************************
+
+	******************************************************
+	Updated to include lots of different things but if you want to use gun crafting you have to use https://github.com/Novax69/weaponsCrafting
+	Original thread: http://www.exilemod.com/topic/24968-tuto-how-to-craft-weapons
+	******************************************************
 	Updated for 1.0.2
 	Added "Exile" to start of Exile objects dropdown as some overlap with EBM.
 	Added "EBM" to start of EBM objects dropdown.
-******************************************************
-	Updated for 0.9.8
-	Removed duplicate extended or custom craftings which now appear in Exile by default
-	Tidied up some classes so the extended crafting doesnt appear with Exile classes where snap building would be affected
-******************************************************
+	******************************************************
 Designed to be easier to update rather than having large config file - much easier for Exile updates, a collection of some of mine and a lot of other peoples posting of recipes on the Exilemod forums.
 
 All 3 crafting files include dropdown classes for BRAma Cookbook
@@ -36,9 +36,27 @@ ExtendedBuilding is for the Extended Base mod: http://www.exilemod.com/topic/127
 
 class CfgCraftingRecipes
 {
-	#include "addons\crafting\ExtendedBuilding.hpp"
-	#include "addons\crafting\CustomCrafting.hpp"
+	#include "addons\crafting\AmmoCrafting.hpp"
+	#include "addons\crafting\ArifleCrafting.hpp"			// requires weapon craft mod
+	#include "addons\crafting\ArifleReclaiming.hpp"			// requires weapon craft mod
+	#include "addons\crafting\ArifleUpgrading.hpp"			// requires weapon craft mod
+	#include "addons\crafting\BipodCrafting.hpp"
+	#include "addons\crafting\ElectronicsCrafting.hpp"
 	#include "addons\crafting\ExileCrafting.hpp"
+	#include "addons\crafting\FlareCrafting.hpp"
+	#include "addons\crafting\ItemsCrafting.hpp"
+	#include "addons\crafting\MedicalCrafting.hpp"
+	#include "addons\crafting\MeleeCrafting.hpp"
+	#include "addons\crafting\OpticsCrafting.hpp"
+	#include "addons\crafting\PistolCrafting.hpp"			// requires weapon craft mod
+	#include "addons\crafting\PistolReclaiming.hpp"			// requires weapon craft mod
+	#include "addons\crafting\RHSPistolCrafting.hpp"		// requires weapon craft mod
+	#include "addons\crafting\SmokeCrafting.hpp"
+	#include "addons\crafting\SniperCrafting.hpp"			// requires weapon craft mod
+	#include "addons\crafting\StorageCrafting.hpp"
+	#include "addons\crafting\SuppressorCrafting.hpp"
+	#include "addons\crafting\TracerCrafting.hpp"
+	#include "addons\crafting\WeaponRespray.hpp"			// requires weapon craft mod
 };
 and save
 4. Repack into your mission PBO.

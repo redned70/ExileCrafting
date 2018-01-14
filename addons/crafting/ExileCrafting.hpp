@@ -1,62 +1,3 @@
-class BreachingChargeBigMomma: Exile_AbstractCraftingRecipe
-{
-	name = "Breaching Charge (Big Momma)";
-	pictureItem = "Exile_Item_BreachingCharge_BigMomma";
-	returnedItems[] =
-	{
-		{1, "Exile_Item_BreachingCharge_BigMomma"}
-	};
-	tools[] =
-	{
-		"Exile_Item_Foolbox"
-	};
-	components[] = 
-	{
-		{3, "Exile_Item_BreachingCharge_Metal"},
-		{1, "Exile_Item_MobilePhone"},
-		{1, "Exile_Item_DuctTape"},
-		{1, "Exile_Item_ZipTie"}
-	};
-};
-
-class BreachingChargeMetal: Exile_AbstractCraftingRecipe
-{
-	name = "Breaching Charge (Metal)";
-	pictureItem = "Exile_Item_BreachingCharge_Metal";
-	returnedItems[] =
-	{
-		{1, "Exile_Item_BreachingCharge_Metal"}
-	};
-	tools[] =
-	{
-		"Exile_Item_Foolbox"
-	};
-	components[] = 
-	{
-		{1, "Exile_Item_DuctTape"},
-		{1, "SatchelCharge_Remote_Mag"}
-	};
-};
-
-class BreachingChargeWood: Exile_AbstractCraftingRecipe
-{
-	name = "Breaching Charge (Wood)";
-	pictureItem = "Exile_Item_BreachingCharge_Wood";
-	returnedItems[] =
-	{
-		{1, "Exile_Item_BreachingCharge_Wood"}
-	};
-	tools[] =
-	{
-		"Exile_Item_Foolbox"
-	};
-	components[] = 
-	{
-		{1, "Exile_Item_DuctTape"},
-		{1, "DemoCharge_Remote_Mag"}
-	};
-};
-
 class CookBBQSandwich: Exile_AbstractCraftingRecipe
 {
 	name = "Cook BBQ Sandwich";
@@ -74,8 +15,8 @@ class CookBBQSandwich: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_BBQSandwich"}
 	};
+			category = "Food";
 };
-
 class CookCatFood: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Cat Food";
@@ -93,8 +34,8 @@ class CookCatFood: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_CatFood"}
 	};
+			category = "Food";
 };
-
 class CookChristmasTinner: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Christmas Tinner";
@@ -112,6 +53,7 @@ class CookChristmasTinner: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_ChristmasTinner"}
 	};
+			category = "Food";
 };
 class CookCoffee: Exile_AbstractCraftingRecipe
 {
@@ -131,6 +73,7 @@ class CookCoffee: Exile_AbstractCraftingRecipe
 		{1, "Exile_Item_PlasticBottleFreshWater"},
 		{1, "Exile_Item_InstantCoffee"}
 	};
+			category = "Food";
 };
 class CookDogFood: Exile_AbstractCraftingRecipe
 {
@@ -149,8 +92,8 @@ class CookDogFood: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_DogFood"}
 	};
+			category = "Food";
 };
-
 class CookGloriousKnakworst: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Glorious Knakworst";
@@ -168,8 +111,8 @@ class CookGloriousKnakworst: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_GloriousKnakworst"}
 	};
+			category = "Food";
 };
-
 class CookMacasCheese: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Macas Cheese";
@@ -187,8 +130,8 @@ class CookMacasCheese: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_MacasCheese"}
 	};
+			category = "Food";
 };
-
 class CookPlasticBottleDirtyWater: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Dirty Water";
@@ -206,6 +149,7 @@ class CookPlasticBottleDirtyWater: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_PlasticBottleDirtyWater"}
 	};
+			category = "Food";
 };
 class CookPlasticBottleSaltWater: Exile_AbstractCraftingRecipe
 {
@@ -224,8 +168,8 @@ class CookPlasticBottleSaltWater: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_PlasticBottleSaltWater"}
 	};
+			category = "Food";
 };
-
 class CookSausageGravy: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Sausage Gravy";
@@ -243,8 +187,8 @@ class CookSausageGravy: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_SausageGravy"}
 	};
+			category = "Food";
 };
-
 class CookSurstromming: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Surströmming";
@@ -262,22 +206,8 @@ class CookSurstromming: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_Surstromming"}
 	};
+			category = "Food";
 };
-
-class CraftBandage: Exile_AbstractCraftingRecipe
-{
-	name = "Craft Bandage";
-	pictureItem = "Exile_Item_Bandage";
-	returnedItems[] =
-	{
-		{1, "Exile_Item_Bandage"}
-	};
-	components[] = 
-	{
-		{4, "Exile_Item_ToiletPaper"}
-	};
-};
-
 class CraftConcreteDoorway: Exile_AbstractCraftingRecipe
 {
 	name = "Craft Concrete Doorway";
@@ -297,6 +227,7 @@ class CraftConcreteDoorway: Exile_AbstractCraftingRecipe
 		{3, "Exile_Item_WaterCanisterDirtyWater"},
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
+			category = "Building Concrete";
 };
 class CraftConcreteFloor: Exile_AbstractCraftingRecipe
 {
@@ -317,6 +248,7 @@ class CraftConcreteFloor: Exile_AbstractCraftingRecipe
 		{2, "Exile_Item_WaterCanisterDirtyWater"},
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
+			category = "Building Concrete";
 };
 class CraftConcreteFloorPort: Exile_AbstractCraftingRecipe
 {
@@ -337,6 +269,7 @@ class CraftConcreteFloorPort: Exile_AbstractCraftingRecipe
 		{3, "Exile_Item_WaterCanisterDirtyWater"},
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
+			category = "Building Concrete";
 };
 class CraftConcreteGate: Exile_AbstractCraftingRecipe
 {
@@ -357,6 +290,7 @@ class CraftConcreteGate: Exile_AbstractCraftingRecipe
 		{4, "Exile_Item_WaterCanisterDirtyWater"},
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
+			category = "Building Concrete";
 };
 class CraftConcretStairs: Exile_AbstractCraftingRecipe
 {
@@ -377,6 +311,7 @@ class CraftConcretStairs: Exile_AbstractCraftingRecipe
 		{1, "Exile_Item_WaterCanisterDirtyWater"},
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
+			category = "Building Concrete";
 };
 class CraftConcretSupport: Exile_AbstractCraftingRecipe
 {
@@ -397,6 +332,7 @@ class CraftConcretSupport: Exile_AbstractCraftingRecipe
 		{1, "Exile_Item_WaterCanisterDirtyWater"},
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
+			category = "Building Concrete";
 };
 class CraftConcreteWall: Exile_AbstractCraftingRecipe
 {
@@ -417,6 +353,7 @@ class CraftConcreteWall: Exile_AbstractCraftingRecipe
 		{2, "Exile_Item_WaterCanisterDirtyWater"},
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
+			category = "Building Concrete";
 };
 class CraftFirePlace: Exile_AbstractCraftingRecipe
 {
@@ -430,6 +367,7 @@ class CraftFirePlace: Exile_AbstractCraftingRecipe
 	{
 		{2, "Exile_Item_WoodLog"}
 	};
+			category = "Building General";
 };
 class CraftFloodLight: Exile_AbstractCraftingRecipe
 {
@@ -446,6 +384,7 @@ class CraftFloodLight: Exile_AbstractCraftingRecipe
 		{1, "Exile_Item_LightBulb"},
 		{1, "Exile_Item_ExtensionCord"}
 	};
+			category = "Building General";
 };
 class CraftFortificationUpgrade: Exile_AbstractCraftingRecipe
 {
@@ -463,6 +402,7 @@ class CraftFortificationUpgrade: Exile_AbstractCraftingRecipe
 		{4, "Exile_Item_MetalBoard"}
 	};
 	tools[] = {"Exile_Item_Grinder"};
+			category = "Building General";
 };
 class CraftHBarrier5Kit: Exile_AbstractCraftingRecipe
 {
@@ -482,6 +422,7 @@ class CraftHBarrier5Kit: Exile_AbstractCraftingRecipe
 		{3, "Exile_Item_SandBagsKit_Long"},
 		{2, "Exile_Item_MetalWire"}
 	};
+			category = "Building General";
 };
 class CraftMetalBoard: Exile_AbstractCraftingRecipe
 {
@@ -497,6 +438,7 @@ class CraftMetalBoard: Exile_AbstractCraftingRecipe
 		{2, "Exile_Item_JunkMetal"}
 	};
 	tools[] = {"Exile_Item_Grinder"};
+			category = "Building General";
 };
 class CraftMetalHedgehog: Exile_AbstractCraftingRecipe
 {
@@ -512,6 +454,7 @@ class CraftMetalHedgehog: Exile_AbstractCraftingRecipe
 		{4, "Exile_Item_MetalPole"}
 	};
 	tools[] = {"Exile_Item_Grinder"};
+			category = "Building General";
 };
 class CraftMetalPole: Exile_AbstractCraftingRecipe
 {
@@ -527,6 +470,7 @@ class CraftMetalPole: Exile_AbstractCraftingRecipe
 		{4, "Exile_Item_JunkMetal"}
 	};
 	tools[] = {"Exile_Item_Grinder"};
+			category = "Building General";
 };
 class CraftPortableGenerator: Exile_AbstractCraftingRecipe
 {
@@ -543,29 +487,8 @@ class CraftPortableGenerator: Exile_AbstractCraftingRecipe
 		{1, "Exile_Item_FuelCanisterFull"},
 		{1, "Exile_Item_ExtensionCord"}
 	};
+			category = "Building General";
 };
-/*class CraftRazorWireKit: Exile_AbstractCraftingRecipe
-{
-	name = "Craft Razor Wire Kit Kit";
-	pictureItem = "Exile_Item_RazorWireKit_Long";
-	requiredInteractionModelGroup = "WorkBench";
-	tools[] = 
-	{
-		"Exile_Item_Grinder", 
-		"Exile_Item_Pliers",
-		"Exile_Item_Screwdriver"
-	};
-	returnedItems[] = 
-	{
-		{1, "Exile_Item_RazorWireKit_Long"}
-	};
-	components[] = 
-	{
-		{2, "Exile_Item_MetalPole"},
-		{4, "Exile_Item_MetalWire"},
-		{1, "Exile_Item_MetalScrews"}
-	};
-};*/
 class CraftRepairKitConcrete: Exile_AbstractCraftingRecipe
 {
 	name = "Craft Concrete Repair Kit";
@@ -584,6 +507,7 @@ class CraftRepairKitConcrete: Exile_AbstractCraftingRecipe
 		{1, "Exile_Item_WaterCanisterDirtyWater"},
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
+			category = "Building Repairkit";
 };
 class CraftRepairKitMetal: Exile_AbstractCraftingRecipe
 {
@@ -604,6 +528,7 @@ class CraftRepairKitMetal: Exile_AbstractCraftingRecipe
 		"Exile_Item_Foolbox",
 		"Exile_Item_Grinder"
 	};
+			category = "Building Repairkit";
 };
 class CraftRepairKitWood: Exile_AbstractCraftingRecipe
 {
@@ -623,6 +548,7 @@ class CraftRepairKitWood: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Foolbox"
 	};
+			category = "Building Repairkit";
 };
 class CraftSandBagsKitCorner: Exile_AbstractCraftingRecipe
 {
@@ -637,6 +563,7 @@ class CraftSandBagsKitCorner: Exile_AbstractCraftingRecipe
 	{
 		{3, "Exile_Item_Sand"}
 	};
+			category = "Building General";
 };
 class CraftSandBagsKitLong: Exile_AbstractCraftingRecipe
 {
@@ -651,6 +578,7 @@ class CraftSandBagsKitLong: Exile_AbstractCraftingRecipe
 	{
 		{6, "Exile_Item_Sand"}
 	};
+			category = "Building General";
 };
 class CraftStorageCrate: Exile_AbstractCraftingRecipe
 {
@@ -665,6 +593,7 @@ class CraftStorageCrate: Exile_AbstractCraftingRecipe
 	{
 		{5, "Exile_Item_WoodPlank"}
 	};
+			category = "Building General";
 };
 class CraftWaterBarrel: Exile_AbstractCraftingRecipe
 {
@@ -680,6 +609,7 @@ class CraftWaterBarrel: Exile_AbstractCraftingRecipe
 	{
 		{20, "Exile_Item_PlasticBottleEmpty"}
 	};
+			category = "Building General";
 };
 class CraftWireFenceKit: Exile_AbstractCraftingRecipe
 {
@@ -702,6 +632,7 @@ class CraftWireFenceKit: Exile_AbstractCraftingRecipe
 		{6, "Exile_Item_MetalWire"},
 		{1, "Exile_Item_MetalScrews"}
 	};
+			category = "Building General";
 };
 class CraftWoodDoorWay: Exile_AbstractCraftingRecipe
 {
@@ -716,6 +647,7 @@ class CraftWoodDoorWay: Exile_AbstractCraftingRecipe
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
+			category = "Building Wooden";
 };
 class CraftWoodDrawBridge: Exile_AbstractCraftingRecipe
 {
@@ -732,6 +664,7 @@ class CraftWoodDrawBridge: Exile_AbstractCraftingRecipe
 		{1, "Exile_Item_JunkMetal"},
 		{1, "Exile_Item_MetalScrews"}
 	};
+			category = "Building Wooden";
 };
 class CraftWoodFloor: Exile_AbstractCraftingRecipe
 {
@@ -746,6 +679,7 @@ class CraftWoodFloor: Exile_AbstractCraftingRecipe
 	{
 		{4, "Exile_Item_WoodPlank"}
 	};
+			category = "Building Wooden";
 };
 class CraftWoodFloorPort: Exile_AbstractCraftingRecipe
 {
@@ -760,6 +694,7 @@ class CraftWoodFloorPort: Exile_AbstractCraftingRecipe
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
+			category = "Building Wooden";
 };
 class CraftWoodFloorPortSmall: Exile_AbstractCraftingRecipe
 {
@@ -774,6 +709,7 @@ class CraftWoodFloorPortSmall: Exile_AbstractCraftingRecipe
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
+			category = "Building Wooden";
 };
 class CraftWoodGate: Exile_AbstractCraftingRecipe
 {
@@ -788,6 +724,7 @@ class CraftWoodGate: Exile_AbstractCraftingRecipe
 	{
 		{8, "Exile_Item_WoodPlank"}
 	};
+			category = "Building Wooden";
 };
 class CraftWoodLadder: Exile_AbstractCraftingRecipe
 {
@@ -802,6 +739,7 @@ class CraftWoodLadder: Exile_AbstractCraftingRecipe
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
+			category = "Building Wooden";
 };
 class CraftWoodPlank: Exile_AbstractCraftingRecipe
 {
@@ -817,6 +755,7 @@ class CraftWoodPlank: Exile_AbstractCraftingRecipe
 		{2, "Exile_Item_WoodLog"}
 	};
 	tools[] = {"Exile_Item_Handsaw"};
+			category = "Building Wooden";
 };
 class CraftWoodStairs: Exile_AbstractCraftingRecipe
 {
@@ -831,6 +770,7 @@ class CraftWoodStairs: Exile_AbstractCraftingRecipe
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
+			category = "Building Wooden";
 };
 class CraftWoodSupport: Exile_AbstractCraftingRecipe
 {
@@ -845,6 +785,7 @@ class CraftWoodSupport: Exile_AbstractCraftingRecipe
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
+			category = "Building Wooden";
 };
 class CraftWoodWall: Exile_AbstractCraftingRecipe
 {
@@ -859,6 +800,7 @@ class CraftWoodWall: Exile_AbstractCraftingRecipe
 	{
 		{4, "Exile_Item_WoodPlank"}
 	};
+			category = "Building Wooden";
 };
 class CraftWoodWallHalf: Exile_AbstractCraftingRecipe
 {
@@ -873,6 +815,7 @@ class CraftWoodWallHalf: Exile_AbstractCraftingRecipe
 	{
 		{2, "Exile_Item_WoodPlank"}
 	};
+			category = "Building Wooden";
 };
 class CraftWoodWindow: Exile_AbstractCraftingRecipe
 {
@@ -887,6 +830,7 @@ class CraftWoodWindow: Exile_AbstractCraftingRecipe
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
+			category = "Building Wooden";
 };
 class CraftWorkBench: Exile_AbstractCraftingRecipe
 {
@@ -900,6 +844,7 @@ class CraftWorkBench: Exile_AbstractCraftingRecipe
 	{
 		{4, "Exile_Item_WoodLog"}
 	};
+			category = "Building General";
 };
 class CookAlsatianSteak: Exile_AbstractCraftingRecipe
 {
@@ -918,10 +863,8 @@ class CookAlsatianSteak: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_AlsatianSteak_Raw"}
 	};
+			category = "Food";
 };
-
-///////////////////////////////////////////////////////////////////////////////
-
 class CookCatSharkFilet: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Cat Shark Filet";
@@ -939,10 +882,8 @@ class CookCatSharkFilet: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_CatSharkFilet_Raw"}
 	};
+			category = "Food";
 };
-
-///////////////////////////////////////////////////////////////////////////////
-
 class CookChickenFilet: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Chicken Filet";
@@ -960,10 +901,8 @@ class CookChickenFilet: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_ChickenFilet_Raw"}
 	};
+			category = "Food";
 };
-
-///////////////////////////////////////////////////////////////////////////////
-
 class CookFinSteak: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Fin Steak";
@@ -981,10 +920,8 @@ class CookFinSteak: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_FinSteak_Raw"}
 	};
+			category = "Food";
 };
-
-///////////////////////////////////////////////////////////////////////////////
-
 class CookGoatSteak: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Goat Steak";
@@ -1002,10 +939,8 @@ class CookGoatSteak: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_GoatSteak_Raw"}
 	};
+			category = "Food";
 };
-
-///////////////////////////////////////////////////////////////////////////////
-
 class CookMackerelFilet: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Mackerel Filet";
@@ -1023,10 +958,8 @@ class CookMackerelFilet: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_MackerelFilet_Raw"}
 	};
+			category = "Food";
 };
-
-///////////////////////////////////////////////////////////////////////////////
-
 class CookMulletFilet: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Mullet Filet";
@@ -1044,10 +977,8 @@ class CookMulletFilet: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_MulletFilet_Raw"}
 	};
+			category = "Food";
 };
-
-///////////////////////////////////////////////////////////////////////////////
-
 class CookOrnateFilet: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Ornate Filet";
@@ -1065,10 +996,8 @@ class CookOrnateFilet: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_OrnateFilet_Raw"}
 	};
+			category = "Food";
 };
-
-///////////////////////////////////////////////////////////////////////////////
-
 class CookRabbitSteak: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Rabbit Steak";
@@ -1086,10 +1015,8 @@ class CookRabbitSteak: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_RabbitSteak_Raw"}
 	};
+			category = "Food";
 };
-
-///////////////////////////////////////////////////////////////////////////////
-
 class CookRoosterFilet: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Rooster Filet";
@@ -1107,10 +1034,8 @@ class CookRoosterFilet: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_RoosterFilet_Raw"}
 	};
+			category = "Food";
 };
-
-///////////////////////////////////////////////////////////////////////////////
-
 class CookSalemaFilet: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Salema Filet";
@@ -1128,10 +1053,8 @@ class CookSalemaFilet: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_SalemaFilet_Raw"}
 	};
+			category = "Food";
 };
-
-///////////////////////////////////////////////////////////////////////////////
-
 class CookSheepSteak: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Sheep Steak";
@@ -1149,10 +1072,8 @@ class CookSheepSteak: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_SheepSteak_Raw"}
 	};
+			category = "Food";
 };
-
-///////////////////////////////////////////////////////////////////////////////
-
 class CookSnakeFilet: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Snake Filet";
@@ -1170,10 +1091,8 @@ class CookSnakeFilet: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_SnakeFilet_Raw"}
 	};
+			category = "Food";
 };
-
-///////////////////////////////////////////////////////////////////////////////
-
 class CookTunaFilet: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Tuna Filet";
@@ -1191,10 +1110,8 @@ class CookTunaFilet: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_TunaFilet_Raw"}
 	};
+			category = "Food";
 };
-
-///////////////////////////////////////////////////////////////////////////////
-
 class CookTurtleFilet: Exile_AbstractCraftingRecipe
 {
 	name = "Cook Turtle Filet";
@@ -1212,9 +1129,8 @@ class CookTurtleFilet: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_TurtleFilet_Raw"}
 	};
+			category = "Food";
 };
-
-
 class EmptyFuelCanister: Exile_AbstractCraftingRecipe
 {
 	name = "Empty Fuel Canister";
@@ -1227,6 +1143,7 @@ class EmptyFuelCanister: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
+			category = "Fuel";
 };
 class EmptyPlasticBottleDirtyWater: Exile_AbstractCraftingRecipe
 {
@@ -1240,6 +1157,7 @@ class EmptyPlasticBottleDirtyWater: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_PlasticBottleDirtyWater"}
 	};
+			category = "Food";
 };
 class EmptyPlasticBottleSaltWater: Exile_AbstractCraftingRecipe
 {
@@ -1253,6 +1171,7 @@ class EmptyPlasticBottleSaltWater: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_PlasticBottleSaltWater"}
 	};
+			category = "Food";
 };
 class FillEmptyPlasticBottleWithDirtyWater: Exile_AbstractCraftingRecipe
 {
@@ -1267,6 +1186,7 @@ class FillEmptyPlasticBottleWithDirtyWater: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_PlasticBottleEmpty"}
 	};
+			category = "Food";
 };
 class FillEmptyPlasticBottleWithFreshWater: Exile_AbstractCraftingRecipe
 {
@@ -1281,6 +1201,7 @@ class FillEmptyPlasticBottleWithFreshWater: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_PlasticBottleEmpty"}
 	};
+			category = "Food";
 };
 class FillEmptyPlasticBottleWithSaltWater: Exile_AbstractCraftingRecipe
 {
@@ -1295,6 +1216,7 @@ class FillEmptyPlasticBottleWithSaltWater: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_PlasticBottleEmpty"}
 	};
+			category = "Food";
 };
 class FillEmptyWaterCanisterWithDirtyWater: Exile_AbstractCraftingRecipe
 {
@@ -1309,6 +1231,7 @@ class FillEmptyWaterCanisterWithDirtyWater: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_WaterCanisterEmpty"}
 	};
+			category = "Food";
 };
 class FillFuelCanister: Exile_AbstractCraftingRecipe
 {
@@ -1323,6 +1246,7 @@ class FillFuelCanister: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
+			category = "Fuel";
 };
 class UpgradeToConcreteDoor: Exile_AbstractCraftingRecipe
 {
@@ -1339,6 +1263,7 @@ class UpgradeToConcreteDoor: Exile_AbstractCraftingRecipe
 		{2, "Exile_Item_MetalPole"},
 		{4, "Exile_Item_MetalBoard"}
 	};
+			category = "Building Upgrades";
 };
 class UpgradeToConcreteFloorPort: Exile_AbstractCraftingRecipe
 {
@@ -1355,6 +1280,7 @@ class UpgradeToConcreteFloorPort: Exile_AbstractCraftingRecipe
 		{2, "Exile_Item_MetalPole"},
 		{4, "Exile_Item_MetalBoard"}
 	};
+			category = "Building Upgrades";
 };
 class UpgradeToConcreteGate: Exile_AbstractCraftingRecipe
 {
@@ -1371,6 +1297,7 @@ class UpgradeToConcreteGate: Exile_AbstractCraftingRecipe
 		{2, "Exile_Item_MetalPole"},
 		{4, "Exile_Item_MetalBoard"}
 	};
+			category = "Building Upgrades";
 };
 class UpgradeToConcreteWindow: Exile_AbstractCraftingRecipe
 {
@@ -1387,6 +1314,7 @@ class UpgradeToConcreteWindow: Exile_AbstractCraftingRecipe
 		{2, "Exile_Item_MetalPole"},
 		{4, "Exile_Item_MetalBoard"}
 	};
+			category = "Building Upgrades";
 };
 class UpgradeToWoodDoor: Exile_AbstractCraftingRecipe
 {
@@ -1402,6 +1330,7 @@ class UpgradeToWoodDoor: Exile_AbstractCraftingRecipe
 		{1, "Exile_Item_WoodDoorwayKit"},
 		{2, "Exile_Item_WoodPlank"}
 	};
+			category = "Building Upgrades";
 };
 class UpgradeToWoodDrawBridge: Exile_AbstractCraftingRecipe
 {
@@ -1419,6 +1348,7 @@ class UpgradeToWoodDrawBridge: Exile_AbstractCraftingRecipe
 		{1, "Exile_Item_JunkMetal"},
 		{1, "Exile_Item_MetalScrews"}
 	};
+			category = "Building Upgrades";
 };
 class UpgradeToWoodFloorPort: Exile_AbstractCraftingRecipe
 {
@@ -1434,6 +1364,7 @@ class UpgradeToWoodFloorPort: Exile_AbstractCraftingRecipe
 		{1, "Exile_Item_WoodFloorKit"},
 		{2, "Exile_Item_WoodPlank"}
 	};
+			category = "Building Upgrades";
 };
 class UpgradeToWoodGate: Exile_AbstractCraftingRecipe
 {
@@ -1449,6 +1380,7 @@ class UpgradeToWoodGate: Exile_AbstractCraftingRecipe
 		{1, "Exile_Item_WoodWallKit"},
 		{4, "Exile_Item_WoodPlank"}
 	};
+			category = "Building Upgrades";
 };
 class UpgradeToWoodWall: Exile_AbstractCraftingRecipe
 {
@@ -1463,6 +1395,7 @@ class UpgradeToWoodWall: Exile_AbstractCraftingRecipe
 	{
 		{2, "Exile_Item_WoodWallHalfKit"}
 	};
+			category = "Building Upgrades";
 };
 class UpgradeToWoodWindow: Exile_AbstractCraftingRecipe
 {
@@ -1478,4 +1411,5 @@ class UpgradeToWoodWindow: Exile_AbstractCraftingRecipe
 		{1, "Exile_Item_WoodWallKit"},
 		{2, "Exile_Item_WoodPlank"}
 	};
+			category = "Building Upgrades";
 };
