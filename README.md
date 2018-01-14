@@ -16,7 +16,7 @@ Original thread: http://www.exilemod.com/topic/24968-tuto-how-to-craft-weapons/?
 NOTE you MUST use the weapons crafting mod to do anything with guns.<br>
 <br><br>
 <b>********************************************************</b><br>
-<b>**** https://github.com/Novax69/weaponsCrafting ****</b><br>
+<b>*** https://github.com/Novax69/weaponsCrafting ***</b><br>
 <b>*********************** by Novax ***********************</b><br>
 <b>********************************************************</b><br>
 <br><br>
