@@ -17,9 +17,9 @@ NOTE you MUST use the weapons crafting mod to do anything with guns.<br>
 <br><br>
 <b>********************************************************</b><br>
 <b>*** https://github.com/Novax69/weaponsCrafting ***</b><br>
-<b>*********************** by Novax ***********************</b><br>
+<b>*********************** by Novax **********************</b><br>
 <b>********************************************************</b><br>
 <br><br>
 <b>Big thanks to Exile Mod <a href="http://www.exilemod.com">http://www.exilemod.com</a></b><br>
 <br>
-<b>Orignal thread and support at <a href="http://www.exilemod.com/topic/24968-tuto-how-to-craft-weapons">http://www.exilemod.com/topic/24968-tuto-how-to-craft-weapons</a></b><br>	
+<b>Orignal thread and support at <a href="http://www.exilemod.com/topic/14035-updated-easy-crafting-setup/">http://www.exilemod.com/topic/14035-updated-easy-crafting-setup/</a></b><br>	
