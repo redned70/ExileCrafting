@@ -17,12 +17,12 @@ class Exile_Item_SafeKit: Exile_AbstractCraftingRecipe
     	{1, "Exile_Item_Codelock"}
     };
 	tools[] = 	{
-				"Exile_Item_Grinder", 
+				"Exile_Item_Grinder",
 				"Exile_Item_Pliers",
 				"Exile_Item_Hammer"
 				};
 	category = "Storage";
-}; 
+};
 
 class Exile_Item_CamoTentKit: Exile_AbstractCraftingRecipe
 {
@@ -43,4 +43,20 @@ class Exile_Item_CamoTentKit: Exile_AbstractCraftingRecipe
     };
 	tools[] = {"Exile_Item_Knife"};
 		category = "Building";
-}; 
+};
+class CraftOldChest: Exile_AbstractCraftingRecipe
+{
+	name = "Craft Old Chest";
+	pictureItem = "Exile_Item_OldChestKit";
+	requiredInteractionModelGroup = "WorkBench";
+	returnedItems[] =
+	{
+		{1, "Exile_Item_OldChestKit"}
+	};
+	components[] =
+	{
+		{3, "Exile_Item_WoodPlank"},
+		{3, "Exile_Item_JunkMetal"}
+	};
+	category = "Storage";
+};

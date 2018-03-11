@@ -11,7 +11,7 @@ class CookBBQSandwich: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_BBQSandwich"}
 	};
@@ -30,7 +30,7 @@ class CookCatFood: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_CatFood"}
 	};
@@ -49,7 +49,7 @@ class CookChristmasTinner: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_ChristmasTinner"}
 	};
@@ -68,7 +68,7 @@ class CookCoffee: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_PlasticBottleFreshWater"},
 		{1, "Exile_Item_InstantCoffee"}
@@ -88,7 +88,7 @@ class CookDogFood: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_DogFood"}
 	};
@@ -107,7 +107,7 @@ class CookGloriousKnakworst: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_GloriousKnakworst"}
 	};
@@ -126,7 +126,7 @@ class CookMacasCheese: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_MacasCheese"}
 	};
@@ -145,7 +145,7 @@ class CookPlasticBottleDirtyWater: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_PlasticBottleDirtyWater"}
 	};
@@ -164,7 +164,7 @@ class CookPlasticBottleSaltWater: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_PlasticBottleSaltWater"}
 	};
@@ -183,7 +183,7 @@ class CookSausageGravy: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_SausageGravy"}
 	};
@@ -202,7 +202,7 @@ class CookSurstromming: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_Surstromming"}
 	};
@@ -213,13 +213,13 @@ class CraftConcreteDoorway: Exile_AbstractCraftingRecipe
 	name = "Craft Concrete Doorway";
 	pictureItem = "Exile_Item_ConcreteDoorwayKit";
 	requiresConcreteMixer = true;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteDoorwayKit"},
 		{3, "Exile_Item_WaterCanisterEmpty"},
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
-	components[] = 
+	components[] =
 	{
 		{3, "Exile_Item_Cement"},
 		{3, "Exile_Item_Sand"},
@@ -229,18 +229,40 @@ class CraftConcreteDoorway: Exile_AbstractCraftingRecipe
 	};
 			category = "Building Concrete";
 };
+class CraftConcreteDrawbridge: Exile_AbstractCraftingRecipe
+{
+	name = "Craft Concrete Drawbridge";
+	pictureItem = "Exile_Item_ConcreteDrawBridgeKit";
+	requiresConcreteMixer = true;
+	returnedItems[] =
+	{
+		{1, "Exile_Item_ConcreteDrawBridgeKit"},
+		{4, "Exile_Item_WaterCanisterEmpty"},
+		{1, "Exile_Item_FuelCanisterEmpty"}
+	};
+	components[] =
+	{
+		{4, "Exile_Item_Cement"},
+		{4, "Exile_Item_Sand"},
+		{4, "Exile_Item_MetalPole"},
+		{3, "Exile_Item_JunkMetal"},
+		{4, "Exile_Item_WaterCanisterDirtyWater"},
+		{1, "Exile_Item_FuelCanisterFull"}
+	};
+			category = "Building Concrete";
+};
 class CraftConcreteFloor: Exile_AbstractCraftingRecipe
 {
 	name = "Craft Concrete Floor";
 	pictureItem = "Exile_Item_ConcreteFloorKit";
 	requiresConcreteMixer = true;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteFloorKit"},
 		{2, "Exile_Item_WaterCanisterEmpty"},
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_Cement"},
 		{2, "Exile_Item_Sand"},
@@ -255,17 +277,38 @@ class CraftConcreteFloorPort: Exile_AbstractCraftingRecipe
 	name = "Craft Concrete Floor Port";
 	pictureItem = "Exile_Item_ConcreteFloorPortKit";
 	requiresConcreteMixer = true;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteFloorPortKit"},
 		{3, "Exile_Item_WaterCanisterEmpty"},
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
-	components[] = 
+	components[] =
 	{
 		{3, "Exile_Item_Cement"},
 		{3, "Exile_Item_Sand"},
 		{3, "Exile_Item_MetalPole"},
+		{3, "Exile_Item_WaterCanisterDirtyWater"},
+		{1, "Exile_Item_FuelCanisterFull"}
+	};
+			category = "Building Concrete";
+};
+class CraftConcreteFloorPortSmall: Exile_AbstractCraftingRecipe
+{
+	name = "Craft Concrete Floor Port (Small)";
+	pictureItem = "Exile_Item_ConcreteFloorPortSmallKit";
+	requiresConcreteMixer = true;
+	returnedItems[] =
+	{
+		{1, "Exile_Item_ConcreteFloorPortSmallKit"},
+		{3, "Exile_Item_WaterCanisterEmpty"},
+		{1, "Exile_Item_FuelCanisterEmpty"}
+	};
+	components[] =
+	{
+		{3, "Exile_Item_Cement"},
+		{2, "Exile_Item_Sand"},
+		{2, "Exile_Item_MetalPole"},
 		{3, "Exile_Item_WaterCanisterDirtyWater"},
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
@@ -276,13 +319,13 @@ class CraftConcreteGate: Exile_AbstractCraftingRecipe
 	name = "Craft Concrete Gate";
 	pictureItem = "Exile_Item_ConcreteGateKit";
 	requiresConcreteMixer = true;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteGateKit"},
 		{4, "Exile_Item_WaterCanisterEmpty"},
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_Cement"},
 		{4, "Exile_Item_Sand"},
@@ -292,18 +335,40 @@ class CraftConcreteGate: Exile_AbstractCraftingRecipe
 	};
 			category = "Building Concrete";
 };
+class CraftConcreteLadderHatch: Exile_AbstractCraftingRecipe
+{
+	name = "Craft Concrete Ladder Hatch";
+	pictureItem = "Exile_Item_ConcreteLadderHatchKit";
+	requiresConcreteMixer = true;
+	returnedItems[] =
+	{
+		{1, "Exile_Item_ConcreteLadderHatchKit"},
+		{3, "Exile_Item_WaterCanisterEmpty"},
+		{1, "Exile_Item_FuelCanisterEmpty"}
+	};
+	components[] =
+	{
+		{3, "Exile_Item_Cement"},
+		{2, "Exile_Item_Sand"},
+		{2, "Exile_Item_MetalPole"},
+		{3, "Exile_Item_JunkMetal"},
+		{3, "Exile_Item_WaterCanisterDirtyWater"},
+		{1, "Exile_Item_FuelCanisterFull"}
+	};
+			category = "Building Concrete";
+};
 class CraftConcretStairs: Exile_AbstractCraftingRecipe
 {
 	name = "Craft Concrete Stairs";
 	pictureItem = "Exile_Item_ConcreteStairsKit";
 	requiresConcreteMixer = true;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteStairsKit"},
 		{1, "Exile_Item_WaterCanisterEmpty"},
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_Cement"},
 		{1, "Exile_Item_Sand"},
@@ -318,13 +383,13 @@ class CraftConcretSupport: Exile_AbstractCraftingRecipe
 	name = "Craft Concrete Support";
 	pictureItem = "Exile_Item_ConcreteSupportKit";
 	requiresConcreteMixer = true;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteSupportKit"},
 		{1, "Exile_Item_WaterCanisterEmpty"},
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_Cement"},
 		{1, "Exile_Item_Sand"},
@@ -339,13 +404,13 @@ class CraftConcreteWall: Exile_AbstractCraftingRecipe
 	name = "Craft Concrete Wall";
 	pictureItem = "Exile_Item_ConcreteWallKit";
 	requiresConcreteMixer = true;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteWallKit"},
 		{2, "Exile_Item_WaterCanisterEmpty"},
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_Cement"},
 		{2, "Exile_Item_Sand"},
@@ -359,11 +424,11 @@ class CraftFirePlace: Exile_AbstractCraftingRecipe
 {
 	name = "Craft Fire Place";
 	pictureItem = "Exile_Item_CampFireKit";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_CampFireKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_WoodLog"}
 	};
@@ -374,11 +439,11 @@ class CraftFloodLight: Exile_AbstractCraftingRecipe
 	name = "Craft Flood Light";
 	pictureItem = "Exile_Item_FloodLightKit";
 	requiresFire = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_FloodLightKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_MetalPole"},
 		{1, "Exile_Item_LightBulb"},
@@ -392,11 +457,11 @@ class CraftFortificationUpgrade: Exile_AbstractCraftingRecipe
 	pictureItem = "Exile_Item_MetalBoard"; //<< CHANGE IT
 	requiresFire = 1;
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_FortificationUpgrade"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_MetalPole"},
 		{4, "Exile_Item_MetalBoard"}
@@ -409,15 +474,15 @@ class CraftHBarrier5Kit: Exile_AbstractCraftingRecipe
 	name = "Craft H-barrier (5 Blocks)";
 	pictureItem = "Exile_Item_HBarrier5Kit";
 	requiredInteractionModelGroup = "WorkBench";
-	tools[] = 
+	tools[] =
 	{
 		"Exile_Item_Pliers"
 	};
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_HBarrier5Kit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{3, "Exile_Item_SandBagsKit_Long"},
 		{2, "Exile_Item_MetalWire"}
@@ -429,11 +494,11 @@ class CraftMetalBoard: Exile_AbstractCraftingRecipe
 	name = "Craft Metal Board";
 	pictureItem = "Exile_Item_MetalBoard";
 	requiresFire = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_MetalBoard"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_JunkMetal"}
 	};
@@ -445,15 +510,45 @@ class CraftMetalHedgehog: Exile_AbstractCraftingRecipe
 	name = "Craft Metal Hedgehog";
 	pictureItem = "Exile_Item_MetalHedgehogKit";
 	requiresFire = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_MetalHedgehogKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_MetalPole"}
 	};
 	tools[] = {"Exile_Item_Grinder"};
+			category = "Building General";
+};
+class CraftMetalLadder: Exile_AbstractCraftingRecipe
+{
+	name = "Craft Metal Ladder";
+	pictureItem = "Exile_Item_MetalLadderKit";
+	requiredInteractionModelGroup = "WorkBench";
+	returnedItems[] =
+	{
+		{1, "Exile_Item_MetalLadderKit"}
+	};
+	components[] =
+	{
+		{6, "Exile_Item_JunkMetal"}
+	};
+			category = "Building General";
+};
+class CraftMetalLadderDouble: Exile_AbstractCraftingRecipe
+{
+	name = "Craft Metal Ladder (Double Tall)";
+	pictureItem = "Exile_Item_MetalLadderDoubleKit";
+	requiredInteractionModelGroup = "WorkBench";
+	returnedItems[] =
+	{
+		{1, "Exile_Item_MetalLadderDoubleKit"}
+	};
+	components[] =
+	{
+		{2, "Exile_Item_MetalLadderKit"}
+	};
 			category = "Building General";
 };
 class CraftMetalPole: Exile_AbstractCraftingRecipe
@@ -461,11 +556,11 @@ class CraftMetalPole: Exile_AbstractCraftingRecipe
 	name = "Craft Metal Pole";
 	pictureItem = "Exile_Item_MetalPole";
 	requiresFire = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_MetalPole"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_JunkMetal"}
 	};
@@ -477,11 +572,11 @@ class CraftPortableGenerator: Exile_AbstractCraftingRecipe
 	name = "Craft Portable Generator";
 	pictureItem = "Exile_Item_PortableGeneratorKit";
 	requiresFire = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_PortableGeneratorKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_MetalBoard"},
 		{1, "Exile_Item_FuelCanisterFull"},
@@ -494,13 +589,13 @@ class CraftRepairKitConcrete: Exile_AbstractCraftingRecipe
 	name = "Craft Concrete Repair Kit";
 	pictureItem = "Exile_Item_Cement";
 	requiresConcreteMixer = true;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_RepairKitConcrete"},
 		{1, "Exile_Item_WaterCanisterEmpty"},
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_Cement"},
 		{2, "Exile_Item_Sand"},
@@ -515,15 +610,15 @@ class CraftRepairKitMetal: Exile_AbstractCraftingRecipe
 	pictureItem = "Exile_Item_RepairKitMetal";
 	requiresFire = 0;
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_RepairKitMetal"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_MetalBoard"}
 	};
-	tools[] = 
+	tools[] =
 	{
 		"Exile_Item_Foolbox",
 		"Exile_Item_Grinder"
@@ -536,15 +631,15 @@ class CraftRepairKitWood: Exile_AbstractCraftingRecipe
 	pictureItem = "Exile_Item_RepairKitWood";
 	requiresFire = 0;
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_RepairKitWood"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_WoodPlank"}
 	};
-	tools[] = 
+	tools[] =
 	{
 		"Exile_Item_Foolbox"
 	};
@@ -555,11 +650,11 @@ class CraftSandBagsKitCorner: Exile_AbstractCraftingRecipe
 	name = "Craft Sandbags Kit (Corner)";
 	pictureItem = "Exile_Item_SandBagsKit_Corner";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_SandBagsKit_Corner"}
 	};
-	components[] = 
+	components[] =
 	{
 		{3, "Exile_Item_Sand"}
 	};
@@ -570,11 +665,11 @@ class CraftSandBagsKitLong: Exile_AbstractCraftingRecipe
 	name = "Craft Sand Bags Kit (Long)";
 	pictureItem = "Exile_Item_SandBagsKit_Long";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_SandBagsKit_Long"}
 	};
-	components[] = 
+	components[] =
 	{
 		{6, "Exile_Item_Sand"}
 	};
@@ -585,11 +680,11 @@ class CraftStorageCrate: Exile_AbstractCraftingRecipe
 	name = "Craft Storage Crate";
 	pictureItem = "Exile_Item_StorageCrateKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_StorageCrateKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{5, "Exile_Item_WoodPlank"}
 	};
@@ -601,11 +696,11 @@ class CraftWaterBarrel: Exile_AbstractCraftingRecipe
 	pictureItem = "Exile_Item_WaterBarrelKit";
 	requiredInteractionModelGroup = "WorkBench";
 	requiresFire = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WaterBarrelKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{20, "Exile_Item_PlasticBottleEmpty"}
 	};
@@ -616,17 +711,17 @@ class CraftWireFenceKit: Exile_AbstractCraftingRecipe
 	name = "Craft Wire Fence Kit";
 	pictureItem = "Exile_Item_WireFenceKit";
 	requiredInteractionModelGroup = "WorkBench";
-	tools[] = 
+	tools[] =
 	{
-		"Exile_Item_Grinder", 
+		"Exile_Item_Grinder",
 		"Exile_Item_Pliers",
 		"Exile_Item_Screwdriver"
 	};
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WireFenceKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_MetalPole"},
 		{6, "Exile_Item_MetalWire"},
@@ -639,11 +734,11 @@ class CraftWoodDoorWay: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Doorway";
 	pictureItem = "Exile_Item_WoodDoorwayKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodDoorwayKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
@@ -671,11 +766,11 @@ class CraftWoodFloor: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Floor";
 	pictureItem = "Exile_Item_WoodFloorKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodFloorKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_WoodPlank"}
 	};
@@ -686,11 +781,11 @@ class CraftWoodFloorPort: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Floor Port";
 	pictureItem = "Exile_Item_WoodFloorPortKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodFloorPortKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
@@ -716,11 +811,11 @@ class CraftWoodGate: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Gate";
 	pictureItem = "Exile_Item_WoodGateKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodGateKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{8, "Exile_Item_WoodPlank"}
 	};
@@ -741,16 +836,32 @@ class CraftWoodLadder: Exile_AbstractCraftingRecipe
 	};
 			category = "Building Wooden";
 };
+class CraftWoodLadderHatch: Exile_AbstractCraftingRecipe
+{
+	name = "Craft Wood Ladder Hatch";
+	pictureItem = "Exile_Item_WoodLadderHatchKit";
+	requiredInteractionModelGroup = "WorkBench";
+	returnedItems[] =
+	{
+		{1, "Exile_Item_WoodLadderHatchKit"}
+	};
+	components[] =
+	{
+		{6, "Exile_Item_WoodPlank"},
+		{3, "Exile_Item_JunkMetal"}
+	};
+			category = "Building Wooden";
+};
 class CraftWoodPlank: Exile_AbstractCraftingRecipe
 {
 	name = "Craft Wood Plank";
 	pictureItem = "Exile_Item_WoodPlank";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodPlank"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_WoodLog"}
 	};
@@ -762,11 +873,11 @@ class CraftWoodStairs: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Stairs";
 	pictureItem = "Exile_Item_WoodStairsKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodStairsKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
@@ -777,11 +888,11 @@ class CraftWoodSupport: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Support";
 	pictureItem = "Exile_Item_WoodSupportKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodSupportKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
@@ -792,11 +903,11 @@ class CraftWoodWall: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Wall";
 	pictureItem = "Exile_Item_WoodWallKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodWallKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_WoodPlank"}
 	};
@@ -807,11 +918,11 @@ class CraftWoodWallHalf: Exile_AbstractCraftingRecipe
 	name = "Craft 1/2 Wood Wall";
 	pictureItem = "Exile_Item_WoodWallHalfKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodWallHalfKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_WoodPlank"}
 	};
@@ -822,11 +933,11 @@ class CraftWoodWindow: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Window";
 	pictureItem = "Exile_Item_WoodWindowKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodWindowKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
@@ -836,11 +947,11 @@ class CraftWorkBench: Exile_AbstractCraftingRecipe
 {
 	name = "Craft Work Bench";
 	pictureItem = "Exile_Item_WorkBenchKit";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WorkBenchKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_WoodLog"}
 	};
@@ -859,7 +970,7 @@ class CookAlsatianSteak: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_AlsatianSteak_Raw"}
 	};
@@ -878,7 +989,7 @@ class CookCatSharkFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_CatSharkFilet_Raw"}
 	};
@@ -897,7 +1008,7 @@ class CookChickenFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_ChickenFilet_Raw"}
 	};
@@ -916,7 +1027,7 @@ class CookFinSteak: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_FinSteak_Raw"}
 	};
@@ -935,7 +1046,7 @@ class CookGoatSteak: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_GoatSteak_Raw"}
 	};
@@ -954,7 +1065,7 @@ class CookMackerelFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_MackerelFilet_Raw"}
 	};
@@ -973,7 +1084,7 @@ class CookMulletFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_MulletFilet_Raw"}
 	};
@@ -992,7 +1103,7 @@ class CookOrnateFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_OrnateFilet_Raw"}
 	};
@@ -1011,7 +1122,7 @@ class CookRabbitSteak: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_RabbitSteak_Raw"}
 	};
@@ -1030,7 +1141,7 @@ class CookRoosterFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_RoosterFilet_Raw"}
 	};
@@ -1049,7 +1160,7 @@ class CookSalemaFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_SalemaFilet_Raw"}
 	};
@@ -1068,7 +1179,7 @@ class CookSheepSteak: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_SheepSteak_Raw"}
 	};
@@ -1087,7 +1198,7 @@ class CookSnakeFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_SnakeFilet_Raw"}
 	};
@@ -1106,7 +1217,7 @@ class CookTunaFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_TunaFilet_Raw"}
 	};
@@ -1125,7 +1236,7 @@ class CookTurtleFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_TurtleFilet_Raw"}
 	};
@@ -1135,11 +1246,11 @@ class EmptyFuelCanister: Exile_AbstractCraftingRecipe
 {
 	name = "Empty Fuel Canister";
 	pictureItem = "Exile_Item_FuelCanisterEmpty";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
@@ -1182,7 +1293,7 @@ class FillEmptyPlasticBottleWithDirtyWater: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_PlasticBottleDirtyWater"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_PlasticBottleEmpty"}
 	};
@@ -1197,7 +1308,7 @@ class FillEmptyPlasticBottleWithFreshWater: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_PlasticBottleFreshWater"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_PlasticBottleEmpty"}
 	};
@@ -1208,11 +1319,11 @@ class FillEmptyPlasticBottleWithSaltWater: Exile_AbstractCraftingRecipe
 	name = "Fill Salt Water";
 	pictureItem = "Exile_Item_PlasticBottleSaltWater";
 	requiresOcean = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_PlasticBottleSaltWater"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_PlasticBottleEmpty"}
 	};
@@ -1227,7 +1338,7 @@ class FillEmptyWaterCanisterWithDirtyWater: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_WaterCanisterDirtyWater"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_WaterCanisterEmpty"}
 	};
@@ -1238,11 +1349,11 @@ class FillFuelCanister: Exile_AbstractCraftingRecipe
 	name = "Fill Fuel Canister";
 	pictureItem = "Exile_Item_FuelCanisterFull";
 	requiredInteractionModelGroup = "FuelSource";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
@@ -1253,11 +1364,11 @@ class UpgradeToConcreteDoor: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Concrete Door";
 	pictureItem = "Exile_Item_ConcreteDoorKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteDoorKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_ConcreteDoorwayKit"},
 		{2, "Exile_Item_MetalPole"},
@@ -1270,11 +1381,11 @@ class UpgradeToConcreteFloorPort: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Concrete Floor Port";
 	pictureItem = "Exile_Item_ConcreteFloorPortKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteFloorPortKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_ConcreteFloorKit"},
 		{2, "Exile_Item_MetalPole"},
@@ -1287,11 +1398,11 @@ class UpgradeToConcreteGate: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Concrete Gate";
 	pictureItem = "Exile_Item_ConcreteGateKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteGateKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_ConcreteWallKit"},
 		{2, "Exile_Item_MetalPole"},
@@ -1304,11 +1415,11 @@ class UpgradeToConcreteWindow: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Concrete Window";
 	pictureItem = "Exile_Item_ConcreteWindowKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteWindowKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_ConcreteWallKit"},
 		{2, "Exile_Item_MetalPole"},
@@ -1321,11 +1432,11 @@ class UpgradeToWoodDoor: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Wood Door";
 	pictureItem = "Exile_Item_WoodDoorKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodDoorKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_WoodDoorwayKit"},
 		{2, "Exile_Item_WoodPlank"}
@@ -1355,11 +1466,11 @@ class UpgradeToWoodFloorPort: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Wood Floor Port";
 	pictureItem = "Exile_Item_WoodFloorPortKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodFloorPortKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_WoodFloorKit"},
 		{2, "Exile_Item_WoodPlank"}
@@ -1371,11 +1482,11 @@ class UpgradeToWoodGate: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Wood Gate";
 	pictureItem = "Exile_Item_WoodGateKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodGateKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_WoodWallKit"},
 		{4, "Exile_Item_WoodPlank"}
@@ -1387,11 +1498,11 @@ class UpgradeToWoodWall: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Wood Wall";
 	pictureItem = "Exile_Item_WoodWallHalfKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodWallKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_WoodWallHalfKit"}
 	};
@@ -1402,11 +1513,11 @@ class UpgradeToWoodWindow: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Wood Window";
 	pictureItem = "Exile_Item_WoodWindowKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodWindowKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_WoodWallKit"},
 		{2, "Exile_Item_WoodPlank"}
